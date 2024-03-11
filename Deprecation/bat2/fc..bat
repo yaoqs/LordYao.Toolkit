@@ -1,0 +1,2 @@
+echo fc/?
+pause

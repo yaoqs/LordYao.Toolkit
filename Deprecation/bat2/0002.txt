@@ -1,0 +1,441 @@
+    第一卷 第二章
+    ------------------------
+
+  ???日??
+Net  Computer
+从域数据库中添加或删除计算机。该命令仅在运行  Windows  NT  Server  的计算机上可用。
+net  computer  \computername  {/add  |  /del}
+参数
+\computername
+指定要添加到域或从域中删除的计算机。
+/add
+将指定计算机添加到域。
+/del
+将指定计算机从域中删除。
+Net  Config
+显示当前运行的可配置服务，或显示并更改某项服务的设置。
+net  config  [service  [options]]
+参数
+无
+键入不带参数的  net  config  将显示可配置服务的列表。
+service
+通过  net  config  命令进行配置的服务（server  或  workstation）。
+options
+服务的特定选项。完整语法请参阅  net  config  server  或  net  config  workstation。
+Net  Config  Server
+运行服务时显示或更改服务器的服务设置。
+net  config  server  [/autodisconnect:time]  [/srvcomment:"text  "]  [/hidden:{yes  |  n
+o}]
+参数
+无
+键入不带参数的  net  config  server，将显示服务器服务的当前配置。
+/autodisconnect:time
+设置断开前用户会话闲置的最大时间值。可以指定  -1，表示永不断开连接。允许范围是  -1
+-65535  分钟，默认值是  15  分钟。
+/srvcomment:"text  "
+为服务器添加注释，可以通过  net  view  命令在屏幕上显示所加注释。注释最多可达  48  个
+字符，文字要用引号引住。
+/hidden:{yes  |  no}
+指定服务器的计算机名是否出现在服务器列表中。请注意隐含某个服务器并不改变该服务器
+的权限。默认为  no。
+Net  Config  Workstation
+服务运行时，显示或更改工作站各项服务的设置。
+net  config  workstation  [/charcount:bytes]  [/chartime:msec]  [/charwait:sec]
+参数
+无
+键入不带参数的  net  config  workstation  将显示本地计算机的当前配置。
+/charcount:bytes
+指定  Windows  NT  在将数据发送到通讯设备之前收集的数据量。如果同时设置  /chartime:m
+sec  参数，Windows  NT  按首先满足条件的选项运行。允许范围是  0-65535  字节，默认值是
+16  字节。
+/chartime:msec
+指定  Windows  NT  在将数据发送到通讯设备之前收集数据的时间。如果同时设置  /charcoun
+t:bytes  参数，Windows  NT  按首先满足条件的选项运行。允许范围是  0-65535000  毫秒，默
+认值是  250  毫秒。
+/charwait:sec
+设置  Windows  NT  等待通讯设备变为可用的时间。允许的范围是  0-65535  秒，默认值是  36
+00  秒。
+Net  Continue
+重新激活挂起的服务。
+net  continue  service
+参数
+service
+能够继续运行的服务，包括：  file  server  for  macintosh（该服务仅限于  Windows  NT  Se
+rver）
+ftp  publishing  service
+lpdsvc
+net  logon
+network  dde，network  dde  dsdm
+，nt  lm  security  support  provider，remoteboot（该服务仅限于  Windows  NT  Server），
+remote  access  server
+schedule，server，simple  tcp/ip  services  及  workstation  。
+Net  File
+显示某服务器上所有打开的共享文件名及锁定文件数。该命令也可以关闭个别文件并取消文
+件锁定。
+net  file  [id  [/close]]
+参数
+无
+键入不带参数的  net  file  可获得服务器上打开文件的列表。
+id
+文件标识号。
+/close
+关闭打开的文件并释放锁定记录。请从共享文件的服务器中键入该命令。
+Net  Group
+在  Windows  NT  Server  域中添加、显示或更改全局组。该命令仅在  Windows  NT  Server  域
+中可用。
+net  group  [groupname  [/comment:"text  "]]  [/domain]
+net  group  groupname  {/add  [/comment:"text  "]  |  /delete}  [/domain]
+net  group  groupname  username  [  ...]  {/add  |  /delete}  [/domain]
+参数
+无
+键入不带参数的  net  group  可以显示服务器名称及服务器的组名称。
+groupname
+要添加、扩展或删除的组。仅提供某个组名便可查看组中的用户列表。
+/comment:"text  "
+为新建组或现有组添加注释。注释最多可以是  48  个字符，并用引号将注释文字引住。
+/domain
+在当前域的主域控制器中执行该操作，否则在本地计算机上执行操作。
+该参数仅用于作为  Windows  NT  Server  域成员的  Windows  NT  Workstation  计算机。Windo
+ws  NT  Server  计算机默认为在主域控制器中操作。
+username[  ...]
+列表显示要添加到组或从组中删除的一个或多个用户。使用空格分隔多个用户名称项。
+/add
+添加组或在组中添加用户名。必须使用该命令为添加到组中的用户建立帐号。
+/delete
+删除组或从组中删除用户名。
+Net  Help
+提供网络命令列表及帮助主题，或提供指定命令或主题的帮助。可用网络命令列于  N  下面的
+“命令参考”中“命令”窗口内。
+net  help  [command]
+net  command  {/help  |  /?}
+参数
+无
+键入不带参数的  net  help  显示能够获得帮助的命令列表和帮助主题。
+command
+需要其帮助的命令，不要将  net  作为  command  的一部分。
+/help
+提供显示帮助文本方式选择。
+/?
+显示命令的正确语法。
+Net  Helpmsg
+提供  Windows  NT  错误信息的帮助。
+net  helpmsg  message#
+参数
+message#
+需要其帮助的  Windows  NT  消息的四位代码。
+Net  Localgroup
+添加、显示或更改本地组。
+net  localgroup  [groupname  [/comment:"text  "]]  [/domain]
+net  localgroup  groupname  {/add  [/comment:"text  "]  |  /delete}  [/domain]
+net  localgroup  groupname  name  [  ...]  {/add  |  /delete}  [/domain]
+参数
+无
+键入不带参数的  net  localgroup  将显示服务器名称和计算机的本地组名称。
+groupname
+要添加、扩充或删除的本地组名称。只提供  groupname  即可查看用户列表或本地组中的全局
+组。
+/comment:  "text  "
+为新建或现有组添加注释。注释文字的最大长度是  48  个字符，并用引号引住。
+/domain
+在当前域的主域控制器中执行操作，否则仅在本地计算机上执行操作。
+该参数仅应用于  Windows  NT  Server  域中的  Windows  NT  Workstation  计算机。Windows  N
+T  Server  计算机默认为在主域控制器中操作。
+name  [  ...]
+列出要添加到本地组或从本地组中删除的一个或多个用户名或组名，多个用户名或组名之间
+以空格分隔。可以是本地用户、其他域用户或全局组，但不能是其他本地组。如果是其他域
+的用户，要在用户名前加域名（例如，SALESRALPHR）。
+/add
+将全局组名或用户名添加到本地组中。在使用该命令将用户或全局组添加到本地组之前，必
+须为其建立帐号。
+/delete
+从本地组中删除组名或用户名。
+Net  Name
+添加或删除消息名（有时也称别名），或显示计算机接收消息的名称列表。要使用  net  nam
+e  命令，计算机中必须运行信使服务。
+net  name  [name  [/add  |  /delete]]
+参数
+无
+键入不带参数的  net  name  将列出当前使用的名称。
+name
+指定接收消息的名称。名称最多为  15  个字符。
+/add
+将名称添加到计算机中。  /add  是可选项，键入  net  name  name  与键入  net  name  name  /a
+dd  相同。
+/delete
+从计算机中删除名称。
+Net  Pause
+暂停正在运行的服务。
+net  pause  service
+参数
+service
+指下列服务：  file  server  for  macintosh（仅限于  Windows  NT  Server）、ftp  publishi
+ng  service、lpdsvc、net  logon、network  dde、network  dde  dsdm、nt  lm  security  sup
+port  provider、remoteboot（仅限于  Windows  NT  Server）、remote  access  server、sch
+edule、server、simple  tcp/ip  services  或  workstation  。
+Net  Print
+显示或控制打印作业及打印队列。
+net  print  \computername  sharename
+net  print  [\computername  ]  job#  [/hold  |  /release  |  /delete]
+参数
+computername
+共享打印机队列的计算机名。
+sharename
+打印队列名称。当包含  computername  与  sharename  时，使用反斜杠  ()  将它们分开。
+job#
+在打印机队列中分配给打印作业的标识号。有一个或多个打印机队列的计算机为每个打印作
+业分配唯一标识号。如果某个作业号用于共享打印机队列中，则不能指定给其他作业，也不
+能分配给其他打印机队列中的作业。
+/hold
+使用  job#  时，在打印机队列中使打印作业等待。打印作业停留在打印机队列中，并且其他
+打印作业只能等到释放该作业之后才能进入。
+/release
+释放保留的打印作业。
+/delete
+从打印机队列中删除打印作业。
+Net  Send
+向网络的其他用户、计算机或通信名发送消息。要接收消息必须运行信使服务。
+net  send  {name  |  *  |  /domain[:name]  |  /users}  message
+参数
+name
+要接收发送消息的用户名、计算机名或通信名。如果计算机名包含空字符，则要将其用引号
+("  ")  引住。
+*
+将消息发送到组中所有名称。
+/domain[:name]
+将消息发送到计算机域中的所有名称。如果指定  name，则消息将发送到指定域或组中的所有
+名称。
+/users
+将消息发送到与服务器连接的所有用户。
+message
+作为消息发送的文本。
+Net  Session
+列出或断开本地计算机和与之连接的客户端的会话。
+net  session  [\computername]  [/delete]
+参数
+无
+键入不带参数的  net  session  可以显示所有与本地计算机的会话的信息。
+\computername
+标识要列出或断开会话的计算机。
+/delete
+结束与  \computername  计算机会话并关闭本次会话期间计算机的所有打开文件。如果省略
+\computername  参数，将取消与本地计算机的所有会话。
+Net  Share
+创建、删除或显示共享资源。
+net  share  sharename
+net  share  sharename=drive:path  [/users:number  |  /unlimited]  [/remark:"text"]
+net  share  sharename  [/users:number  |  unlimited]  [/remark:"text"]
+net  share  {sharename  |  drive:path}  /delete
+参数
+无
+键入不带参数的  net  share  将显示本地计算机上所有共享资源的信息。
+sharename
+是共享资源的网络名称。键入带  sharename  的  net  share  命令，只显示该共享信息。
+drive:path
+指定共享目录的绝对路径。
+/users:number
+设置可同时访问共享资源的最大用户数。
+/unlimited
+不限制同时访问共享资源的用户数。
+/remark:"text  "
+添加关于资源的注释，注释文字用引号引住。
+/delete
+停止共享资源。
+Net  Start
+启动服务，或显示已启动服务的列表。如果服务名是两个或两个以上的词，如  Net  Logon  或
+Computer  Browser，则必须用引号  (")  引住。.
+net  start  [service]
+参数
+无
+键入不带参数的  net  start  则显示运行服务的列表。
+service
+包括下列服务：  alerter、client  service  for  netware、clipbook  server、computer  br
+owser、dhcp  client  、directory  replicator  、eventlog  、ftp  publishing  service  、
+lpdsvc、messenger  、net  logon  、network  dde  、network  dde  dsdm  、network  monitor
+ing  agent  、nt  lm  security  support  provider  、ole  、remote  access  connection  man
+ager  、remote  access  isnsap  service  、remote  access  server  、remote  procedure  ca
+ll  (rpc)  locator  、remote  procedure  call  (rpc)  service  、schedule  、server  、sim
+ple  tcp/ip  services  、snmp、spooler  、tcp/ip  netbios  helper  、ups  及  workstation
+。
+下列服务仅在  Windows  NT  Server  下可用：file  server  for  macintosh、gateway  servic
+e  for  netware、microsoft  dhcp  server、print  server  for  macintosh、remoteboot、wi
+ndows  internet  name  service  。
+Net  Statistics
+显示本地工作站或服务器服务的统计记录。
+net  statistics  [workstation  |  server]
+参数
+无
+键入不带参数的  net  statistics  将列出其统计信息可用的运行服务。
+workstation
+显示本地工作站服务的统计信息。
+server
+显示本地服务器服务的统计信息。
+Net  Stop
+停止  Windows  NT  网络服务。
+net  stop  service
+参数
+service
+包括下列服务：  alerter（警报）、client  service  for  netware（Netware  客户端服务）
+、clipbook  server（剪贴簿服务器）、computer  browser（计算机浏览器）、directory  r
+eplicator（目录复制器）、ftp  publishing  service  (ftp  )（ftp  发行服务）、lpdsvc、
+messenger（信使）、net  logon（网络登录）、network  dde（网络  dde）、network  dde  d
+sdm（网络  dde  dsdm）、network  monitor  agent（网络监控代理）、nt  lm  security  supp
+ort  provider（NT  LM  安全性支持提供）、ole（对象链接与嵌入）、remote  access  conne
+ction  manager（远程访问连接管理器）、remote  access  isnsap  service（远程访问  isns
+ap  服务）、remote  access  server（远程访问服务器）、remote  procedure  call  (rpc)  l
+ocator（远程过程调用定位器）、remote  procedure  call  (rpc)  service（远程过程调用服
+务）、schedule（调度）、server（服务器）、simple  tcp/ip  services（简单  TCP/IP  服
+务）、snmp、spooler（后台打印程序）、tcp/ip  netbios  helper（TCP/IP  NETBIOS  辅助工
+具）、ups  及  workstation（工作站）。
+下列服务仅在  Windows  NT  Server  中可用：  file  server  for  macintosh、gateway  servi
+ce  for  netware、microsoft  dhcp  server、print  server  for  macintosh、remoteboot、w
+indows  internet  name  service。
+Net  Time
+使计算机的时钟与另一台计算机或域的时间同步。不带  /set  参数使用时，将显示另一台计
+算机或域的时间。
+net  time  [\computername  |  /domain[:name]]  [/set]
+参数
+\computername
+要检查或同步的服务器名。
+/domain[:name]
+指定要与其时间同步的域。
+/set
+使本计算机时钟与指定计算机或域的时钟同步。
+Net  Use
+连接计算机或断开计算机与共享资源的连接，或显示计算机的连接信息。该命令也控制永久
+网络连接。
+net  use  [devicename  |  *]  [\computernamesharename[volume]]  [password  |  *]]  [/user
+:[domainname]username]  [[/delete]  |  [/persistent:{yes  |  no}]]
+net  use  devicename  [/home[password  |  *]]  [/delete:{yes  |  no}]
+net  use  [/persistent:{yes  |  no}]
+参数
+无
+键入不带参数的  net  use  将列出网络连接。
+devicename
+指定要连接到的资源名称或要断开的设备名称。有两类设备名：磁盘驱动器（D:  到  Z:）和
+打印机（LPT1:  到  LPT3）。若键入星号而不是指定设备名将分配下一个可用设备名。
+\computernamesharename
+服务器及共享资源的名称。如果计算机名包含空白字符，要用引号  ("  ")  将双反斜线及计算
+机名引住。计算机名长度可以是  1-15  个字符。
+volume
+指定服务器上的  NetWare  卷。要连接到  NetWare  服务器，必须安装并运行  NetWare  客户机
+服务  (Windows  NT  Workstation)  或  NetWare  网关服务  (Windows  NT  Server)。
+password
+访问共享资源的密码。
+*
+提示键入密码。在密码提示行中键入密码时，将不显示该密码。
+/user
+指定进行连接的另外一个用户。
+domainname
+指定另一个域。例如  net  use  d:  \servershare  /user:adminmariel  连接用户  mariel，如
+同从  admin  域连接一样。如果省略域，将使用当前登录域。
+username
+指定登录的用户名。
+/home
+将用户连接到其宿主目录。
+/delete
+取消指定网络连接。如果用户以星号指定连接，则取消所有网络连接。
+/persistent
+控制永久网络连接的使用。默认为上次使用的设置。无设备的连接不是永久的。
+yes
+保存建立的所有连接，并在下次登录时还原。
+no
+不保存建立的连接和继发连接，并在下次登录时还原现有连接。使用  /delete  开关项取消永
+久连接。
+Net  User
+添加或更改用户帐号或显示用户帐号信息。
+net  user  [username  [password  |  *]  [options]]  [/domain]
+net  user  username  {password  |  *}  /add  [options]  [/domain]
+net  user  username  [/delete]  [/domain]
+参数
+无
+键入不带参数的  net  user  将查看计算机上的用户帐号列表。
+username
+添加、删除、更改或查看用户帐号名。用户帐号名最多可以有  20  个字符。
+password
+为用户帐号分配或更改密码。密码必须满足在  net  accounts  命令  /minpwlen  选项中设置的
+最小参数。最多是  14  个字符。
+*
+提示输入密码。在密码提示行中键入密码时，将不显示该密码。
+/domain
+在计算机主域的主域控制器中执行操作。
+该参数仅在  Windows  NT  Server  域成员的  Windows  NT  Workstation  计算机上可用。默认情
+况下，Windows  NT  Server  计算机在主域控制器中执行操作。
+注意：在计算机主域的主域控制器发生该动作。它可能不是登录域。
+/add
+将用户帐号添加到用户帐号数据库。
+/delete
+从用户帐号数据库中删除用户帐号。
+选项如下所示：
+/active:{no  |  yes}
+启用或禁止用户帐号。如果不激活用户帐号，用户就不能访问计算机上的资源。默认值是  y
+es  （激活）。
+/comment:"text"
+提供用户帐号的注释。该注释最多可以有  48  个字符，文字用引号引住。
+/countrycode:nnn
+使用操作系统的国家代码以便为用户帮助和错误信息文件提供指定语言文件。0  值表示默认
+国家代码。
+/expires:{date  |  never}
+如果设置  date，将导致用户帐号过期，never  不对用户帐号设置时间限制。过期日期根据
+/countrycode  值可以是下列格式：  mm/dd/yy、dd/mm/yy  或  mmm
+dd
+yy。注意帐号在指定
+日期开始时过期。月份可以是数字、全名或三个字母的简拼。年可以是两位或四位数，使用
+逗号或斜线（不要用空格）  区分日期的各部分。如果省略  yy  ，则使用该日期下一次到来的
+年份（根据计算机的时钟）。例如如果在  1994  年  1  月  10  日到  1995  年  1  月  8  日之间输
+入下列日期项，那它们相同：jan
+9
+1/9/95
+january
+9
+1995
+1/9
+/fullname:"name"
+指定用户全名而不是用户名。用引号将名字引住。
+/homedir:path
+设置用户宿主目录的路径。该路径必须存在。
+/homedirreq:{yes  |  no}
+设置是否需要宿主目录。
+/passwordchg:{yes  |  no}
+指定用户是否能改变自己的密码。默认值是  yes。
+/passwordreq:{yes  |  no}
+指定用户帐号是否需要密码，默认值是  yes。
+/profilepath:[path]
+设置用户登录配置文件的路径。该路径名指向注册表配置文件。
+/scriptpath:path
+为用户登录脚本设置路径。Path  不能是绝对路径；
+path  是相对于  %systemroot%SYSTEM32REPLIMPORTSCRIPTS  的相对路径：。
+/times:{times  |  all}
+指定允许用户使用计算机的时间。times  值表示为  day[-day][
+day[-day]]
+time[-time
+][
+time[-time]]
+增量限制为一小时。Days  可以是全名或简写（M、T、W、Th、F、Sa、S
+u）。Hours  可以是  12  小时制或  24  小时制。对于  12  小时值，使用  AM、PM  或  A.M、P.M
+。all  表示用户总可以登录。空值表示用户永远不能登录。用逗号分隔日期和时间，分隔时
+间和日期的单位用分号（例如  M
+4AM-5PM;  T
+1PM-3PM）。指定  /times  时不要使用空格。
+/usercomment:"text  "
+让管理员添加或更改帐号的“用户注释”。用引号引住文字。
+/workstations:{computername[
+...]  |  *}
+列出最多八个用户可以登录到网络的工作站。用逗号分隔列表中的多个项。如果  /workstat
+ions  没有列表，或如果列表是星号“*”，则用户可以从任何一台计算机登录。
+Net  View
+显示域列表、计算机列表或指定计算机的共享资源列表。
+net  view  [\computername  |  /domain[:domainname]]
+net  view  /network:nw  [\computername]
+参数
+无
+键入不带参数的  net  view  将显示当前域的计算机列表。
+\computername
+指定要查看其共享资源的计算机。
+/domain[:domainname]
+指定要查看其可用计算机的域。如果省略  domainname  ，则显示网络的所有域。
+/network:nw
+显示  NetWare  网络中所有可用的服务器。如果指定计算机名，则显示  NetWare  网络中该计
+算机的可用资源。也可以用此开关指定添加到系统中的其它网络.
+
+ 
+ 

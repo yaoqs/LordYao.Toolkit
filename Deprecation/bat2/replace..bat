@@ -1,0 +1,3 @@
+pause
+echo replace
+pause

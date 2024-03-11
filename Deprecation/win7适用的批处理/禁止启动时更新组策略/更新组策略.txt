@@ -1,0 +1,1 @@
+当你的电脑身处于局域网，或者自己通过组策略设置了一些规则，那么启动时会花费较长的时间来更新组策略，造成启动速度较慢，而这个技巧可以让这些处理工作在你登录完成后再执行，从而加速启动。打开“注册表编辑器”，找到[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]，在右侧窗格新建SynchronousMachineGroupPolicy和SynchronousUserGroupPolicy双字节值（D），将它们的值都设置为0即可

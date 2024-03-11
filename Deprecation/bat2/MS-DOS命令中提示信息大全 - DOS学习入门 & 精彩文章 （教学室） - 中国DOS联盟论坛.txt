@@ -1,0 +1,1452 @@
+Abort edit (Y/N)? (是否退出编辑)?
+      原因：当用户在EDLIN中选择Q(Quit)命令时，DOS显示这条信息。按Y键结束编辑，按N继续进行。
+      
+      Access denied (拒绝存取)
+      原因：用户试图操作一个写保护、只读或锁定的文件，或执行某条命令时，违反文件、子目录或设备应遵从的存取方式。
+      
+      Active code page xxx (活动代码页xxx)
+      原因：这是当前DOS正在使用的码页。所有附属设备不允许使用相同的代码页，这是CHCP的提示信息。
+      
+      Active code page not available form CON device (CON设备发出的代码失效)
+      原因：系统当前使用的码页不支持现有的控制台。
+      
+      A dapter error (适配器错)
+      原因：系统启动期间遇到故障，某些驱动程序未安装。
+
+      Add file name? (Y/N) (增加文件)?
+      (是/不) 原因：在使用REPLACE命令时出现提示性信息。如想增加文件则按下Y键，否则按N键。
+      
+      Adding filename (正在追加文件)
+      原因：在上述操作中选择Y后出现的提示性信息，表示已开始追加所需的文件。
+      
+      All available space in the extended DOD partition is assigned to
+      logical drives. (扩展的DOS分区中的所有空间都已分配给逻辑驱动器)
+      原因：在使用FDISK命令进行硬盘分区时，在未删除旧的分区前企图对扩展的DOS分区重新进行逻辑驱动器的定义。
+      
+      All files canceled by operator (操作员已把所有文件删除)
+      原因：当用户在PRINT命令中指定了/T参数后，该命令将取消排队打印的所有文件，DOS显示出这条信息。
+      
+      All files in directory will be deleted! (目录中的所有文件将被删除)
+      Are you sure(Y/N) (你确认真要删除吗?)
+      原因：用户试图用通配符(*.*)来删除当前目录(指定路径)中的所有文件，DOS将显示这样的信息。如果确定要不是删除则回答Y，否则按下N。
+      
+      All logical drives deleted in the extended DOS partition (扩展的DOS分区中的所有逻辑驱动器已删除)
+      
+      原因：在使用FDISK对硬盘进行分区时必须预先删除已存在的分区，第一步就是删除逻辑驱动器分区。这是DOS提示性的信息，证明逻辑驱动分区已删除，进而可以删除其它的分区。
+      
+      Allocation error,size adjusted (文件分配错，请调整尺寸)
+      原因：目录中记录的文件尺寸与实际分配的数据不一致。
+      
+      All specified file(s) are configuous (所有指定的文件位置是相邻的)
+      原因：为证实用户指定的文件是否已按次序写在磁盘相邻的扇区上，可用CHKDSK命令进行检查。这是检查时发出的提示性信息。
+      
+      An error occuredwhile installing DOS.
+      Press Enter to continue,or Esc to exit setup (安装DOS时出现错误。按Enter键继续，按Esc键退出安装)
+      
+      原因：这是安装DOS时出现的提示，原因复杂，用户可根据具体情况作出相应的回答。
+      
+      ANSI.SYS must be installed to perform requested function (ANSI.SYS必须安装要求执行的功能)
+      
+      原因：所有设备管理都必须通过设备驱动程序，后者必须由MODE命令设定并与ANSI.SYS配置文件结合使用。本提示出现，多数由于MODE命令引起。可以把DEVICE=ANSI.SYS加到CONFIG.SYS文件中，然后重新启动DOS。
+      
+      APPEND already installed (APPEND命令已安装)
+      原因：用户多次调用APPEND的外部版本。一旦该命令驻留内存，用户仅能使用其内部版本。如果已调用一次，又试图再用APPEND命令的/x开关或/E参数，则不能被接受。此时如果想改变参数设置，可重新启动系统，重新装入APPEND命令并重新选择参数。
+      
+      APPEND/ASSEGN coflict (APPEND和ASSIGN冲突)
+      原因：用户在装入APPEND命令之前装入了ASSIGN命令，因为在已分配的驱动器上不允许使用APPEND命令。
+      
+      Attempt to remove current directory (企图撤消当前目录)
+      原因：当一个目录是当前工作的目录时用户不能撤消它。必须先把其中的全部文件删除，退出此目录，最后方可删除此目录。
+      
+      Amount read less than size in header (读出总数小于文件头指出的大小)
+      原因：EXE2BIN文件的程序量小于文件头中所指出的量。应该重新编译或汇编，然后再连接。
+      
+      Array element size mismatch (数组元素大小不匹配)
+      原因：连接公用数组中存在两种或多种类型的数组元素说明，因而必须排除数组说明中的错误，重建目录模块。
+      
+      Attempt to access data outside of segment bounds (试图存取段边界外的数据)
+      
+      原因：连接目录文件无效。必须检查。ASM文件或汇编清单，看是否存在超越段界的错误或错误的指令。
+      
+       Attempted write protedt violation (非法的写保护磁盘操作)
+      原因：在存在写保护的盘上进行格式化的操作
+
+      /B invalid with a black and white printer (在黑白打印机中选用/B参数是无效的)
+      原因：在黑白打印机中不能打印背影色彩，因而不能使用/B参数。
+      
+      * * *Backing up files to drive X: * * *
+      Diskette Number:n (正在往驱动器X里备份文件：* * *，磁盘号：n)
+      原因：用户使用BACKUP命令向指定的驱动器备份文件时将显示此信息。这是提示性信息。
+      
+      Bad command or file name (命令或文件名错)
+      原因：DOS未能找到用户请求执行的命令或程序文件。用户必须检查输入的命令是否正确，或检查驱动器中是否存在指定的文件名，或文件所在的路径是否正确。
+      
+      Bad internal reloe table (内部重新定位表错)
+      原因：连接程序有错，换掉LINK盘，重新连接。
+      
+      Bad or missing d:path smartdrv.sys (SMARTDRV.SYS的驱动器或路径错或丢失)
+      原因：在驱动器或目录里没有SMARTDRV.SYS系统文件，但SMARTDRV.SYS文件在出现在SMARTDRIVE命令行里。请用户重新编辑CONFIG.SYS系统文件，并且在SMARTDRV.SYS文件相应行里键入正确的驱动器和路径名。
+      
+      Bad or missing command interpreter (命令解释程序错或丢失)
+      原因：DOS在磁盘中找不到COMMAND.COM文件，要么是在根目录里没有COMMAND.COM文件，要么是COMMAND.COM文件有缺损。如果COMMAND.COM文件被从原目录中移走，那么在启动DOS时，系统也显示这条信息。解决这个错误的办法是：用一个包含COMMAND.SYS文件的系统新启动系统；或者把原始的DOS系统盘中的COMMAND.SYS文件拷贝到用户用来启动系统的磁盘中。
+      
+      Bad or missing<filename> (<文件名>错或丢失)
+      原因：用户在CONFIG.SYS系统文件中指定了一个错误的设备名。检查CONFIG.SYS文件中DEVICE命令的正确性。
+      
+      Bad or missing keyboard definition file (键盘定义文件错或丢失)
+      原因：DOS找不到用户用KEYB命令指定的KEYBXX文件。检查一下所指定的文件在磁盘中是否存在，所指定的路径是否包括此文件所在目录然后重新键入命令。如果还显示这条信息，可能是KEYBORAD.SYS或KEYB.COM文件已被破坏。
+      
+      Bad partition table (分区表错)
+      原因：这条信息意味着在硬盘中没有DOS分区。用户必须运行FDISK程序在要格式化的硬盘中建立DOS分区。
+      
+      Bad unit error reading drive X: (驱动器X部件错)
+      原因：对设备驱动程序传送了无效的设备号。
+      
+      Batch file missing (批处理文件丢失)
+      原因：系统没有找到被引用的批文件。
+      
+      Baud rate required (需指定波特率)
+      原因：为了MODE命令初始化COM通信口，MODE COMX命令至少得指定一个波特率。
+      
+      Break is off(or on) (中断控制处于开或“关”)
+      原因：这条信息告诉用户当前breakr的状态。当用户在DOS提示符下键入Break回车后，DOS系统将在屏幕上显示出这条信息，即：Break is on或Break is off。这是一条提示性信息。
+
+      Cannot chair to path-tree past this point not processed (不能校验当前指定的树路径)
+      原因：CHKDSK校验目录的结构，它不能返回指定的目录校验，隶属于该目录的所有子子目录也不能校验。为了自动修正这个错误，指定CHKDSK/f参数。
+      
+      Cannot chdir to root (不能改变当前目录为根目录)
+      原因：CHKDSK校验目录的树型结构，不能返回根目录。CHKDSK不能继续对剩余子目录进行校验。可重新启动DOS。如果仍然出现这个错误，那这磁盘就不能用了。
+      
+      Cannot chkdsk a network drive (不能检验网络驱动器)
+      原因：不能校验已被替代或者已分配的驱动器。
+      
+      Cannot chkdsk a SUBSTed or ASSIGNed drive (不能对已替换或已分派的驱动器执行CHKDSK命令)
+      
+      原因：不能校验已替代或者已分配的驱动器，因为SUBST命令隐藏了校验所需要的磁盘信息。
+      
+      Cannot create a zero size partition (不能建立0空间的分区)
+      原因：用户试图用0个柱面的空间建立分区。对建立的任一分区，必须至少分配1个柱面的空间。
+      
+      Cannot create extended DOS partition without primary DOS partition
+      on disk1 (在硬盘上没有建立初始分区前不能建立扩展的DOS分区)
+      原因：用户试图建立一个扩展DOS分区，但用户的第一个硬盘上没有初始的DOS分区。首先应在第一个硬盘上建立一个初始的DOS分区，如果在硬盘上有足够的空间，或者有第二个硬盘，就可以建立一个扩展DOS分区。
+      
+      Cannot createlogical DOS drive without an extended DOS partition
+      on the current drive (在没有建立扩展的DOS分区前，在硬盘上不能建立逻辑驱动器)
+      原因：在建立任一逻辑驱动器之前，必须先建立一个扩展的DOS分区。
+      
+      Cannot delete extended DOS partition while
+      logical drives exist (在逻辑驱动器还存在时，不能删除扩展的DOS分区)
+      原因： 对硬盘已经分配了一个或多个逻辑驱动器，要想删除扩展的DOS分区，应先删除逻辑驱动器。用fdisk先删除所有的逻辑驱动器，然后再删除扩展的DOS分区。
+      
+      Cannot diskcomp to or from an assigned or
+      substed drive (不能对已分配的或已替换的磁盘进行比较)
+      原因：用户指定的其中一个驱动器是用ASSIGN或SUBST命令建立的驱动器。
+      
+      Cannot DISKCOMP to or from a network drive
+      (不能和网络上使用的驱动器进行硬盘比较操作)
+      原因：用户不能在网络使用的磁盘上进行磁盘的比较。
+      
+      Cannot diskcopy to or from an ASSIGNED or
+      SUBSTED drive (不能对用ASSIGEND或SUBSTED命令建立的驱动器使用DISKCOPY命令)
+      原因：在使用DISKCOPY命令时，用户指定的驱动器中有一个驱动器是用ASSIGN或SUBST命令建立的驱动器。
+      
+      Cannot DISKCOMP to or from a network drive
+      (不能和网络上使用的驱动器进行磁盘比较操作)
+      原因：用户不能在网络使用的磁盘上进行磁盘的比较。
+      
+      Cannot diskcopy to or from an ASSIGNED or
+      SUBSTED drive (不能对用ASSIGEND或SUBSTED命令建立的驱动器使用DISKCOPY命令)
+      原因：在使用DISKCOPY命令时，用户指定的驱动器中有一个驱动器是用ASSIGN或SUBST命令建立的。
+      
+      Cannot diskcopy to or from a network drive
+      (不能对网络驱动器执行DISKCOPY命令)
+      原因：用户不能对更换为网络使用的驱动器进行DISKCOPY操作。
+      
+      Cannot do binary reads from a device (不能以二进制方式从设备上读出数据)
+      原因：从一个设备拷贝信息时，不能以二进制方式进行拷贝，而用户复制时使用了设备名和参数/B。解决这个问题的方法是：或者在拷贝时不指定/B参数，或者用/A参数指定用ASCII码方式进行拷贝。
+      
+      Cannot EDIT.BAK file-rename file (不能编辑以BAK扩展名命名的文件，必须对文件改名)
+      原因：EDLIN行编辑器不 能编辑以BAK为扩展名的备份文件。如欲编辑此文件，必须先对它改名为非BAK后缀的文件。
+      
+      Cannot find system files (找不到系统文件)
+      原因：FORMAT.COM命令未找到隐含的DOS系统文件。应切换到含有系统文件的驱动器，再次运行。
+      
+      Cannot format a network drive (不能格式化一个网络驱动器)
+      原因：在网络环境下不能格式化盘。
+      
+      Cannot FDISK a network drive (不能对网络驱动器执行FDISK命令)
+      原因：在网络环境下不能再对硬盘分区。
+      
+      Cannot find FORMAT.COM (未找到FORMAT.COM文件)
+      原因：在当前目录中或在指定的路径上找不到FORMAT.COM文件。
+      
+      Cannot find GRAPHICS profile (未找到GRAPHICS.PRO文件)
+      原因：可能GRAPHICS.PRO文件不在当前目录中。用户可以用指定路径和指定目录方法再次访问。
+      
+      Cannot format an ASSIGNed or SUBSTed drive
+      (不能对已经用ASSIGN和SUBST命令分配指定的驱动器进行格式化)
+      原因：用户指定要格式化的驱动器实际上已经由ASSIGN和SUBST命令指定为另一驱动器了。如果进行格式化可再一次运行ASSIGN或SUBST命令，清除所有已分配的驱动器。
+      
+      Cannot format nonremovable drive X: (不能对固定的驱动器X进行格式化)
+      原因：用户在对磁盘进行BACKUP时使用了/F参数，而指定的驱动器却是一个硬盘或网络驱动器。如果确要将文件备份到一个硬盘，必须使用已格式化过的硬盘。
+      
+      Cannot JOIN a Network drive (不能连接已更改为网络使用的驱动器)
+      原因：在网络环境下企图改变已存在的卷标。
+      
+      Cannot LABEL a SUBSTed or ASSIGNed drive (不能对已经用SUB命令替代过或用ASSIGN命令分配过的驱动器建立卷标)
+      原因：在试图对运行过SUBST或ASSIGN命令之后的驱动器指定卷标。
+      
+      Cannot Load COMMADN system halted (不能装入命令处理程序，系统停止)
+      原因：在试图装入命令处理程序期间，发生了下列情况之一：DOS常驻区已被破坏；DOS在环境参数说明的路径上未找到；没有足够的内存装入命令处理程序。
+      
+      Cannot perform a cyclic copy (不能执行循环拷贝)
+      原因：当用户在XCOPY中使用/S参数时，拷贝目标不能是拷贝源的子目录。
+      
+      Cannot read file allocation table (不能读文件分配表)
+      原因：磁盘上的文件分配表已被破坏。
+      
+      Cannot RECOVER a network drive (不能恢复网络驱动器)
+      原因：用户企图在网络使用的驱动器上恢复文件，这是允许的。
+      
+      Cannot setup expended memory (不能设置扩展内存)
+      原因：本提示表明，系统中的扩展内存板(EMS)工作不正常。
+      
+      Cannot specify default drive (不能指定缺省驱动器)
+      原因：用户如果没在磁盘上为SYS命令保留足够的空间来安装系统文件，或是没有在驱动器的根目录里为SYS命令保留两个闲置的入口，就想传送操作系统文件，那么SYS命令不能指定用户想传送系统文件的驱动器。
+      
+      Cannot start command,exiting (不能启动命令，退出)
+      原因：可能需要增加config.sys文件中的files值，然后再重新启动DOS。或者是因为寻找命令处理程序的路径设置有错误，也可能是没有足够的内存空间来装入命令处理程序(command processor)。
+      
+      Cannot SUBST a network drive (不能替代网络驱动器)
+      原因：用户不能替代已被网络使用的驱动器。
+      
+      Cannot SYS to a network drive (不用对网络驱动器执行SYS命令)
+      原因：已经改为网络使用的驱动器，用户不能再向其传送系统文件。
+      
+      Cannot use FASTOPEN for drive X: (不能对驱动器X：使用FASTOPEN命令)
+      原因：FASTOPEN只能用在近程的硬盘上，并且一次最多使用4个，但用户试图在网络上或在软盘上，或同时在4个以上硬盘上使用FASTOPEN，这是不可能的。
+      
+      Cannot use PRINT-use NET PRINT (不能用PRINT命令，应该使用NET
+      PRINT命令)
+      原因：在一个网络系统中不能使用PINT命令打印文件。
+      
+      Cannot xcopy to a reserved device (不能保留的设备使用XCOPY命令)
+      原因：指定的目标是一个字符设备，如打印机或一个异步通信口，或者是NUL。
+      
+      CHDIR failed,trying alternate Method (改变目录失败，试用另一方法)
+      原因：CHKDSK在往一个目录树中读写发现一个不可屏蔽的错误，CHKDSK不能返回父目录。可重新启动DOS，然后再执行CHKDSK命令。
+      
+      CHKDSK not available on drive X: (不能在X：驱动器上执行CHKDSK命令)
+      原因：用户试图去校验一个找不到的备用文件系统。这是一条提示性信息。
+      
+      xxxx code page driver cannot be initialized
+      (xxxx 码页驱动程序不能初始化)
+      原因：DOS不能启动PRINTER.SYS或DISPLAY.SYS程序。在CONFIG.SYS的DRIVE语句中输入了一个非法的参数。
+      
+      Code page not prepared (码页未准备好)
+      原因：用户选择了还未给系统准备的码页，或者是支持当前显示模式的码页没在正确的字体。为了给系统准备码页，可用模式准备命令(Mode prepare
+      command)。如果用户已建立能安装设备驱动程序的DISPLAY.SYS系统文件，则在CONFIG.SYS系统文件中，应该有用于补充其它字体的device命令行。
+      
+      Code page xxx not prepared for all devices
+      (没有为所有的设备准备好码页)
+      原因：用户所选择的设备不能支持码页转换。应该用MODE命令为码页转换准备好设备。然后再试CHCP命令。
+      
+      Code page xxx not preparedfor system (没有为系统准备好码页)
+      原因：CHCP命令不能为系统选择码页。首先，确认NLSFUNC已安装。如果用户在CONFIG.SYS系统文件中尚未使用device命令安装设备驱动程序，那么，现在可重试一次CHCP命令；如果用户的系统正在使用可安装的设备驱动程序，那么，必须用模式准备命令为每个设备准备具体的码页，然后，再键入CHCP命令。
+      
+      Code page operation not supported on this
+      device (本设备不支持码页操作)
+      原因：用户在MODE命令中指定了一个DOS不能有效识别的设备和码页组合。检查一下用户指定的设备是否存在，以及列出有效码页，同时也检查一下设备是否支持该码页。
+      
+      Code page requested xxx is not valid for given
+      keyboard code (xxx要求的页码对给定的键代码无效)
+      原因：键盘代码和指定的码页不一致。重新键入KEYB命令，使用合适的KEYBOARD码和码页。
+      
+      Code page specified has not been designated
+      (指定的码页未标明)
+      原因：用户键入了系统不能识别的KEYB命令选择项。必须先为控制台的屏幕设备准备一个相关的码页。用MODE命令为控制台准备相关的码页，然后，再键入KEYB命令。
+      
+      Code page specified has not been prepared
+      (专用的码页未准备好)
+      原因：用户键入了系统不能识别的KEYB命令项。用户必须先为控制台的屏幕设备准备一个相关的码页。用MODE命令为控制台准备相关的码页，然后，再键入KEYB命令。
+      
+      Code page specified is inconsistent with invoked
+      code page (指定的码页和祈求的码页不一致)
+      原因：这条警告信息使用户知道，所选择的KEYB选项与控制台屏幕设备(CON)的码页不一致。如果用户想改变控制台的码页，可用模式选择命令(mode
+      select command)。
+      
+      Code page xxx (码页为xxx)
+      原因：对某一设备，用户要么指定了一个重复的码页，要么试图准备超出该设备所能支持的码页数。检查一下config.sys系统文件中的device命令行，看允许为该设备准备多少码页。再使用检查一下config.sys系统文件中的device命令行，看允许为该设备准备多少码页。再使用MODE命令的/status选项，看看已经为该设备准备了的码页数。
+      
+      Compar eerror at OFFSET xxx (在偏移地址xxx处比较出错)
+      原因：这条错误信息指出，进行文件比较时，在显示的文件相对位置xxx(十六进制)处，有不同的十六进制值。
+      
+      Compare error on disk sides xx,track xx(在xx面xx磁道上比较出现错误)
+      原因：DISKCOMP发现在指定的驱动器中磁盘上的xx面xx道上有差异。
+      
+      Compare ok(比较结束)
+      原因：如果磁盘比较的结果相同，DISKCOMP显示这条信息。
+      
+      Compare process ended (比较终止)
+      原因：在进行磁盘比较期间，如果发生了一个致命的错误，DISKCOMP显示这条信息，并结束比较操作。
+      
+      Comparing t tracks n sectors per track,s side
+      (s) (正在比较t磁道，n扇区,s面)
+      原因：这条信息使用户能够确定正在进行比较的磁盘格式。
+      
+      COM port does not exist (COM端口不存在)
+      原因：用户指定了无效的COM端口。
+      
+      X:contains N non contiguous blocks (X盘中有N个不连续块)
+      原因：磁盘碎裂，含不连续的文件。如果用户想拷贝这种磁盘中的信息，最好用COPY或XCOPY命令，不要用DISKCOPY命令，COPY或XCOPY命令拷贝的文件，在新的磁盘上形成连接的文件。
+      
+      Content of destination lost before copy (拷贝前文件内容已丢失)
+      原因：用户在COPY命令中指定的源文件，在COPY处理完成之前被修改过。请看copy命令的正确语法。
+      
+      Convert directory to file (Y/N)? (是否将目录转换为文件)
+      原因：由于目录中含有过多的无效信息，因而不能继续使用了。如果用户想将其转变成一个文件后用DEBUG加以清理时，键入Y，否则键入N。
+      
+      Convert lost chains to files (Y/N)? (恢复丢失的链码?)
+      原因：如果CHKDSK命令在磁盘文件分配表(FAT)中发现了不合适的分配信息时，显示这个信息。如键入Y，CHKDSK就恢复它检查磁盘时所发现的丢失区，然后对每一个丢失链(带有FILENNNN.CHK形成的文件名)建立一个正确的目录项和文件。如果键入N，CHKDSK就释放丢放区，以便将它们重新分配，但不恢复这些丢失区内的任何数据。
+      
+      Copy another diskette (y/n)? (拷贝其他的盘吗？)
+      原因：这是一条提示信息，在DISKCOPY命令执行完后显示。如果想拷贝另外一张磁盘，则可键入Y，否则键入N。
+      
+      Copying t tracks n sectors/track,s side (正在拷贝t磁道，n扇区，s面)
+      原因：在复制过程中，DISKCOPY显示这条信息。
+      
+      Copy process ended (拷贝过程终止)
+      原因：DISKCOPY不能整盘复制。用COPY或XCOPY复制磁盘上指定的文件。
+      
+      Corrections will not be written to disk (正确信息不能写入磁盘)
+      原因：磁盘上有错误，但CHKDSK不能修正它，因为没有指定/t开关参数。必须指定CHKDSK/t开关参数，以修正磁盘中的错误。
+      
+      Current code page settings (当前码页设置)
+      原因：这条信息是显示为指定设备和系统所准备的码页及当前码页。
+      
+      Current date is mm-dd-yy (当前日期是mm-dd-yy)
+      原因：DATE命令显示出这条信息。用户如欲设置新日期，键入正确的日期并按回车键即可。
+      
+      Current drive is no longer valid (当前驱动器已不再有效)
+      原因：这个消息是当用户在当前网络驱动器上做删除操作时出现，表明该驱动器已失效。必须将该驱动器改为有效的驱动器。如果用的是软盘驱动器，应确认其内有一个软盘且已关好驱动器门。
+      
+      Current keyboard code:xx,code page:yyy,current
+      CON code page:ZZ (当前的键盘代码：xx，码页：yyy，当前CON码页：ZZ)
+      原因：这条信息显示当前键盘代码、相关码页以及目前控制台屏幕设备(CON)使用的码页。
+      
+      Current keyboard does not support this code
+      page (当前键盘不支持这个码页)
+      原因：用户选择的码页与当前键盘代码不一致。检查一下用户所选择的码页。如果正确，可用KEYB命令改变键盘的代码。
+      
+      Current time is hh:mm:ss:cc (当前时间为hh:mm:ss:cc)
+      原因：系统启动后，TIME命令显示这条信息。如果用户想修改，则键入正确的时间并回车，否则直接按回车键表示认可系统的设置。
+      
+      
+      Data error reading drive X: (磁盘X:读数据错误)
+      原因：DOS不能正确地从磁盘X上读数据，这通常是由于磁盘有毛病。可键入R(再试)几次，或选A(异常停止)结束程序(此时最好对该盘作一次备份，因为要是磁盘有毛病，就可能丢失数据)。
+      
+      Delete(Y/N)? (删除，是/否)
+      原因：指定删除某个(些)文件时提示确认是否删除。键入Y则删除文件，或键入N则保留这个文件。
+      
+      Delete current Volume lable(Y/N)? (删除当前卷标吗？)
+      原因：如果已存在一个卷标，现在要为这个磁盘输入一个新的卷标，LABLE就显示这信息。如果要删除卷标，键入Y，否则键入N。
+      
+      Device error during status (设备状态错)
+      原因：在检查设备状态时，DOS在指定的设备中发现一个错误。问题的出现可能是由于设备没有所支持的码页，没有为设备正确地准备码页开关，设备不支持比已准备好的码页更多的码页；或者，该设备里有坏的或有缺陷的文本文件。检查一下CONFIG.SYS系统文件中DEVICE命令行，以确保该命令的语法和对字体的限制以及追加的码页都是正确的，同时也查看一下用户的设备所支持的码页开关，如果还是没有搞清楚，那就请硬件的厂商来解决。
+      
+      Device error during prepare (准备码页时出现设备错)
+      原因：在为设备准备码页开关时节，DOS在指定的设备中发现一个错误。问题的出现可能是由于设备没有所支持的码页；没有为设备正确地准备码页开关；设备不支持比已准备好的码页更多的码页；或者，该设备里有坏的或有缺陷的字体文件。检查一下CONFIG.SYS系统文件中DEVICE命令行，以确保该命令的语法和对字体的限制以及追加的码页都是正确的，同时也查看一下用户的设备所支持的码页开关，如果还是没有搞清楚，那就请硬件的厂商来解决。
+      
+      Device drror during select (选择时设备错)
+      原因：在指定设备时，DOS发现一个错误。问题的出现可能是由于设备没有所支持的码页；没有为设备正确地准备码页开关；设备不支持比已准备好的码页更多的码页；或者，该设备里有坏的或有缺陷的字体文件。检查一下CONFIG.SYS系统文件中DEVICE命令行，以确保该命令的语法和对字体的限制以及追加的码页都是正确的，同时也查看一下用户的设备所支持的码页开关，如果还是没有搞清楚，那就请厂商来解决。
+      
+      Device error during write of font file to
+      device (向设备写字文件时出错)
+      原因：当系统试图将字体文件写到指定的设备时，DOS发现一个错误。问题的产生可能是由于该设备没有所支持的码页，没有为设备正确地准备码页开关；设备不支持比已准备好的码页更多的码页；或者，该设备里有坏的或有缺陷的字体文件。检查一下CONFIG.SYS系统文件中DEVICE命令行，以确保该命令的语法和对字体的限制以及追加的码页都是正确的，同时也查看一下用户的设备所支持的码页开关，如果还是没有搞清楚，那就请硬件的厂商来解决。
+      
+      Device or code page missing from font file
+      (文本文件中缺少设备或码页)
+      原因：DOS在文本文件中没有找到为该设备指定的码页定义。用户应该为该设备用MODE命令指定另外的码页，同时查看一下文件是否支持所使用的码页。这个错误也可能由于指定了未定义的码页。可以用MODE命令为该设备准备和恢复丢失的码页。
+      
+      Device ddd not prepared (设备ddd没有准备好)
+      原因：在响应MODE命令的码状态请求时，指定的设备未能通过MODE prepare命令传送码页定义到设备去。
+      
+      Directory already exists (目录已存在)
+      原因：用户企图建立一个已存在的同名目录。
+      
+      Directory entities adjusted (目录项数已调整)
+      原因：VDISK发现需要重新调整CONFIG.SYS命令中的DEVICE=VDISK.SYS的目录条目数。
+      
+      Directory is joined,tree past this point not
+      processed (目录已被连接，经过该点的目录树未被处理)
+      原因：CHKDSK进行盘校验时，跳过被连结的驱动器。
+      
+      Directory is joined (目录已被连接)
+      原因：CHKDSK不处理已被连接的目录。可以用JOIN/D命令断开目录连接，然后再用CHKDSK检验。
+      
+      Directory not empty (目录未空)
+      原因：需要连接的目录不是空的。
+      
+      Disk boot failure (系统自举失败)
+      原因：启动DOS时出现错误，将系统盘插好后再启动。
+      
+      Disk error reading (or writing)drive X (读驱动器X或写驱动器X时出现错误)
+      原因：DOS不能正确地从磁盘X中读(或者写)数据，这常常是由于磁盘有毛病而引起的错误。可选择R再试几次，或选A(异常停止)结束程序(最好将此磁盘备份，因为，要是磁盘有毛病，就有可能丢失数据)。
+      
+      Disk error reading (or writing)FAT X (读/写FAT时X盘出错)
+      原因：一个文件分配表(FAT)中有一个坏的扇区。DOS自动地使用另一个FAT。应该把所有的文件复制到另一个磁盘上。为了自动地修正这个错误，简单的方法的指定CHKDSK/f开关参数。
+      
+      Disk full edits lost (磁盘已满，编辑无效)
+      原因：由于磁盘空间不够，因此，编辑后无法保存文件。为了保存文件，在发出EDLINE(编辑)命令之前，总是要确保指定的磁盘上有足够的空间，还要保证指定的磁盘没有写保护。
+      
+      Disk full error writing to BACKUPlog file
+      (备份log文件时磁盘写出现错误)
+      原因：用户要写记录文件(log file)的磁盘满了。为了重新开始，按任意键或是Control+Bresk键。
+      
+      Disk unsuitable for system disk (磁盘不适宜作系统盘)
+      原因：FORMAT程序在磁盘上检测到一个坏的扇区，而这个扇区正是系统文件要驻留的扇区。这个磁盘只能用来存放数据，而不能作系统盘使用。
+      
+      Do not specify filename(s).Command format:
+      DISKCOMP D:d[/1][/8] (不要指定文件。命令的格式是：DISKCOMP D:d[/1][/8])
+      原因：用户指定了一个不正确的参数开关，或是在一个驱动器名后面给了一个文件名。
+      
+      Do not specify filename(s).Command format:
+      DISKCOMP D:d[/1] (不要指定文件。命令的格式是：DISKCOMP D:d[/1])
+      原因：用户指定了一个不正确的参数开关，或是在一个驱动器名后面给了一个文件名。
+      
+      Do you see the leftmost 0?(y/n) (看到最左边的0吗？)
+      原因：MODE命令显示这个信息以帮助用户观看屏幕上的测试信息。如果在测试信息中能看见最左边的0就其键入Y；如果想移动显示到右边就键入N。
+      
+      Do you see the leftmost 9?(y/n) (看到最右边的9吗？)
+      原因：MODE命令显示这个信息以帮助用户观看屏幕上的测试信息。如果在测试信息中能看见最右边的9就其键入Y；如果想移动显示到左边就键入N。
+      
+      Do you wish to use the maximum size for a
+      DOS partition and make the DOS partition active(y/n)? (希望使用最大的DOS分区并使之成为激活分区吗？)
+      原因：用户在使用FDISK在格式化硬盘时选择“生成初始DOS分区”后，DOS会显示这条信息。如果想把整个硬盘格式化为一个DOS分区，就键入Y并回车，否则，键入N并回车。
+      
+      Does name specif a file name or directory
+      name on the target(F=file D=directiory)? (在目标盘中指定文件名或目录名了吗？F=文件，D=目录)
+      原因：这是警告信息。在目标盘上，XCOPY不能打开命名为<路径名>的目录。如果用户键入“D”，XCOPY便试图在目标盘上生成一个名字为<路径名>的目录。如果名字是指定一个文件，就键入F。如果目标是指定一个当前不存在的目录，就键入D。
+
+      (.)(..)DOS not exist(.和..不存在)这是一条来自CHKDSK的报告信息，表明“.”“..”目录项是无效的。
+      
+      Dos command line parameters supported (DOS命令行参数被支持)
+      原因：这是一条提示信息。GRAFTABL将显示命令行的参数：当前正在使用的代码页数目和代码页选择表是正确的。
+      
+      Drive X alreadydeleted (X驱动器已被删除)
+      原因：用户试图用FDISK命令删除X驱动器，但该驱动器早已被删除。
+      
+      Drive deleted (驱动器已被删除)
+      原因：在扩展DOS分区指定的逻辑DOS驱动器已经删除了。
+      
+      Drive letter has been changed or deleted (驱动器字母改变或已被删除)
+      原因：一个或更多的逻辑DOS驱动器已从扩展DOS分区中删除。对于每一个保留的逻辑驱动器字母分配可能已改变，因为DOS是依照这些驱动器扩展DOS分区中的物理位置来分配驱动器字母给各个逻辑驱动器。
+      
+      Drive letter must be specified (驱动器必须指定字母)
+      原因：用户未对要格式化的驱动器指定驱动器字母。必须指定的要格式化的驱动器名。
+      
+      Drive types or diskette types not compatible
+      (驱动器类型或磁盘类型不兼容)
+      原因：对于DISKCOMP和DISKCOPY命令，必须有相同的磁盘规格的类型。比如不能从单面磁盘复制到双面磁盘，或将高密度磁盘与低密度磁盘进行比较。如果想比较这些磁盘上的文件，应使用FC命令。如果要复制磁盘，可用COPY或XCOPY命令。或重新格式化目标盘使它和源盘类型一样，或者是用相同类型的盘。
+      
+      Duplicate file name or file not found (文件重名或未找到)
+      原因：用户试图将一个文件名改为已存在的文件名，或是指定了一个找不到的名字。
+      
+      Duplicate parameters not allowed (不允许重复使用同一参数)
+      原因：在执行GRAPHICS命令过程中、用户再次指定了同一参数。
+      
+      
+      Echo is off (or on) (命令显示开关正处于开或关状态)
+      原因：这条信息告诉用户ECHO当前的状态：on或者是off。是用户为查询当前ECHO的状态和想改变其状态时，键入ECHO命令后，或指定“ECHO ON”或“ECHO OFF”后显示的信息。
+      
+      End off input file (输入文件结束)
+      原因：使用EDLIN编辑已存在的文件时，全部文件读入内存后出现此信息，表明全部文件已读到内存里。如果是分段读的，这个信息表明文件的最后一段已读进内存。
+      
+      Enter current volume label for drive X: (输入X驱动器的卷标)
+      原因：对指定驱动器硬盘进行格式化以前，FORMAT要求送入当前的卷标以便进行核对。如果用户不知道卷标是什么，则按Control+C终止这个命令。对一指定的驱动器发出一个VOL命令，确认卷标，然后再发出FORMAT命令。
+      
+      Enter new date: (输入新的日期)
+      原因：当启动DOS或用DATE命令时，用户必须响应这个提示。准确地按显示的格式回答新的日期，或按回车键接收当前显示的日期。
+      
+      Entery error (输入错误)
+      原因：EDLIN检查出用户键入的最后一个命令有语法错误。用正确的语法重新键入，然后按回车键。
+      
+      Entry has a bad attribute (or link or size)
+      (目录项有错误属性，可能是链接或是尺寸方面的问题)
+      原因：这是执行CHKDSK时出现的信息，在本信息前面可能带有一个到两个句号，它表示哪一个子目录是无效的。如果用户指定了CHKDSK/f开关参数，CHKDSK将自动纠正错误。
+      
+      EOF mark not found (EOF标志未找到)
+      原因：当比较非文本文件时，COMP命令找不到正在比较的文件在最后一块中有的有效数据的尾标，COMP就显示这条信息。
+      
+      Error during read of font file (读取字形文件时出现错误)
+      原因：DOS试图为指定的码页读字形文件时，发现了一个错误，说明对设备的码页定义不完全。
+      
+      Error in country command (country命令出错)
+      原因：在config.sys系统文件中，对国家命令(country command)使用了错误语法。请纠正这个配置命令的语法。
+      
+      Error in.EXEfile (EXE文件出错)
+      原因：用户要求DOS装入的.EXE文件中，有一个无效的内部格式，如因修改文件后出现文件头信息有错。用户不能运行这个程序，应检查一下用户所编写的程序，重新连接。
+      
+      Errorloading operationg system (装入操作系统出错)
+      原因：由于硬盘错误，用户不能向硬盘中装入操作系统，可重新启动系统。如果试了几次，每次都出错，那么，应该用DOS系统盘重新启动系统，然后用SYS命令将DOS盘片上的系统传送到硬盘。
+      
+      Error opening logfile (打开记录文件出错)
+      原因：DOS不能打开BACKUP的记录文件。请检查一下用这个命令指定的驱动器和路径。记住在目标驱动器上不能设置记录文件。如果对记录文件不指定文件名，当DOS试图在源盘上打开和生成BACKUP.LOG时，将产生这个错误。
+      
+      Error reading directory (读目录出错)
+      原因：用户不能读取目录，原因是在目录或FAT结构里有坏的扇区。如果在硬盘时发生了这个错误，应重新格式化这个硬盘，使这些区域变为有效。
+      
+      Error reading fixed disk (读硬盘时出错)
+      原因：连续运行五次FDISK程序，仍然不能读取当前硬盘的主引导记录，就会显示这一信息。请参考系统操作手册，仔细检测一下硬盘。
+      
+      Error reading GRAPHICS profile (读取图形文件出错)
+      原因：DOS不能读取图形说明文件(graphics profile)。检查一下磁盘磁盘驱动器的门是否是关好。
+      
+      Error reading/writing partition table (读/写分区表时出错)
+      原因：FORMAT命令不能读或写分区表。用户应先运行FDISK程序，对所操作的硬盘进行分区，然后再进行格式化。
+      
+      Error found,F parameter not specified.
+      Corrections will not be written to disk. (发现错误，因为没有指定F参数，故校正结果不写入磁盘)
+      原因：CHKDSK命令发现磁盘上有错误，如果没有使用/F参数，CHKDSK就连续显示出这条信息，而不能修正错误。如果想修正错误并把校正结果记盘，则必须指定用/F参数项。
+      
+      Errors on list device indicate that it may
+      be off-line,please check (列表设备出错是因处于脱机，请检查)
+      原因：PRINT用于后面打印的设备脱机。只有在设备脱机，而用户又输入一个新的PRINT命令时，才出现出现这个信息。处理办法是确认一下设备是否连接好。
+      
+      Error writing to device (写设备时出错)
+      原因：设备无法处理太多的数据量。应该修改文件中的数据量之后重新执行命令。
+      
+      Error writing directory (FAT or fixed disk)
+      (写目录出错)
+      原因：可能是文件分配表(FAT)有错误，也可能是目录扇区已损坏。如果这个错误在硬盘中出现，那么，重新格式化这块硬盘，使这些区域变为有效。如果这样做仍然出现这个错误，只能换一个硬盘。
+      
+      Error writing to device (写设备时出错)
+      原因：用户试图将过多的数据送到一个设备中去，以致DOS无法将这些数据写到这个设备中去。
+      
+      EXEC failure (执行失败)
+      原因：这个错误可能是DOS正在读一个命令时，出现了一个错误，或者是config.sys系统文件中的files命令值设置得太小。提高config.sys系统文件中的files命令的数值，然后重新启动DOS。
+      
+      Expanded memory not available (不能扩充内存)
+      原因：这是一条提示信息，它表明用户在命令中用了/E参数，但是在用户的系统中并没有安装内存扩展卡。
+      
+      Extended DOS partition already exists (扩展的DOS分区已存在)
+      原因：在用户的硬盘上已建立了一个扩展的DOS分区，而又想由FDISK再生成一另外的扩展DOS分区。
+      
+      Extended DOS partition created (扩展的DOS分区已建立)
+      原因：在用户的硬盘上已建立了一个扩展的DOS分区，但未对这个分区指派驱动器字母，而仅仅只是为在这个分区中生成逻辑DOS驱动器保留了空间。
+      
+      Extended DOS partition deleted (扩展的DOS分区已被删除)
+      原因：表示扩展DOS分区以及它的内容已经从硬盘上删除。
+      
+      Extended card switches do not match system
+      memory size (扩展卡开关和系统内存大小不匹配)
+      原因：扩展卡转换装置不能反映系统单元中内存的总量。尽管扩展卡转换装置对用户系统来说是正确的，但VDISK不能支持扩展单元的存储器。
+      
+      
+      Failure to access code page font file (存取码页字形文件失败)
+      原因：MODE在PREPARE过程中试图访问指定码页的字形文件失败。应该确认一下字形文件是否拼定情正确，验证一下指定的字形文件是否存在。
+      
+      Failure to access device:XXX (存取XXX设备错)
+      原因：MODE在码页操作过程中，指定的DEVICE打开失败。
+      
+      Fastopen already installed (FASTOPEN已经安装过)
+      原因：这是提示性信息，提示用户FASTOPEN命令安装成功。
+      
+      FCB unavailable reading (or writing) drive
+      x: (FCB不能读/写驱动器x)
+      原因：commands随着文件共享的装入，用户试图同时打开的文件控制块比通过文件控制块配置命令所指定的数量多。
+      
+      fc:connot open filename-no such file or directory
+      (不能打开文件名-没有这样的文件或目录)
+      原因：指定的文件不存在。检查一下目录或修正这个文件名。
+      
+      fc:filename longer than filename (一个文件比另一个文件长)
+      原因：在比较文件时，读到一文件结尾后，另一个文件未到结尾，仍有剩余的数据未做比较。
+      
+      fc:incompatiable switches (开关参数不一致)
+      原因：在比较文件的比较过程中，指定了不一致的开关参数(如/B和/I)。不能混用二进制和ASCII码比较开关参数。
+      
+      fc:no differences encountered (没有差异)
+      原因：指出这些文件是相同的。
+      
+      fc:out memory (内存超出)
+      原因：表示没有足够的内存空间来进行文件的比较。
+      
+      File allocation table bad (文件分配表错)
+      原因：这个磁盘可能坏了。运行CHKDSK/f来检查这个磁盘。
+      
+      File allocation table bad drive X: (驱动器X的文件分配表坏)
+      原因：这个信息意味着磁盘没有格式化或格式化不正确，也意味着磁盘上存在DOS以外的操作系统。运行CHKDSK/f检查这个磁盘，如果还显示这个信息，必须重新格式化这个磁盘。
+      
+      File (filename) canceled by operator (文件已被操作员删除)
+      原因：当用户在打印命令中指定/t开关参数时，DOS就显示这个信息，因为PRINT无法打印已删去的文件。
+      
+      File cannot be converted (文件不能转换)
+      原因：输入的文件格式不正确，或EXE2BINJ无法转换源文件。
+      
+      File cannot be copied onto itself (文件不能自身拷贝)
+      原因：表示用户所指定的源文件名和目录文件名相同。
+      
+      File creation error (文件建立出错)
+      原因：用户试图加一个新文件名或替换一个目录中已存在的文件，或者没有足够的空间来存放文件。如果这个文件已存在，它就是一个只读文件，而且不能被替换。如果根目录已满或文件溢出，或者文件名与卷标或目录相同，或有一个隐含(或系统)文件，都可能产生这个错误信息。
+      
+      File is READ-ONLY (文件是只读文件)
+      原因：因文件是只读文件，所以不能编辑这种文件。
+      
+      File name must be specified (必须指定文件名)
+      原因：用户在启动EDLIN程序时没有指定要编辑的文件名。正确的输入方法是：在键入EDLIN命令后，接着键入要编辑的文件名。
+      
+      File not found (文件未找到)
+      原因：DOS找不到用户所指定的文件，或者是用户试图用已在目录中存在的文件名来对文件重新命名。检查一下用户所键入的文件名是否正确。
+      
+      File not in print queue (文件不在打印队列中)
+      原因：用户所指定的文件不在打印队列里，所以不能从打印队列里移走这个文件。检查一下用户所输入的文件名是否正确。
+      
+      File are different sizes (文件长度不同)
+      原因：被比较的二个文件的长度不一样。由于COMP命令不能比较二个长度不同的文件，因此出现这种提示信息。
+      
+      File were backed upat time on date (文件曾按时间和日期备份)
+      原因：在RESTORE操作时显示的提示性信息。
+      
+      FIND:Access denied (拒绝存取)
+      原因：可能由于磁盘锁定，或文件只读，或隐含而不能正常存取和删除而引出的提示。
+      
+      FIND:file not found (文件未找到)
+      原因：DOS找不到用户所指定的文件，可能是文件名或路径不对。
+      
+      FIND:Invalidnumber of parameter (参数数目无效)
+      原因：用户在命令行中指定的选择项太多或太少。
+      
+      FIND:Invlid parameter (无效的参数)
+      原因：用户所指定的开关参数中，发现有错误存在。
+      
+      FIND:Read error in filename (读文件出错)
+      原因：FIND命令不能读用户指定的文件。
+      
+      FIND:Syntax error (方法错误)
+      原因：键入的命令格式有错。
+      
+      First cluster number is invalid entry truncated
+      (第1个簇号无效，在入口处被截断)
+      原因：文件目录中，包含了一个无效的数据区指针。如果定用/F开关参数，则这个文件的长度被截成0。
+      
+      First diskette bad or incompatible (第1个磁盘坏了或不兼容)
+      原因：diskcomp不能识别源磁盘的格式。建议执行CHKDSK命令检查一下问题所在。
+      
+      Fixed backup device D: is full (备份的硬盘空间已满)
+      原因：目录硬盘的空间已被现存的文件占满，用户试图往这个盘里备份更多的文件，因而出现这个提示。
+      
+      Fixups needed-base segment HEX (需要用十六进制表示段地址)
+      原因：源EXE文件含有表示要求装填段的信息。必须指定绝对地址，在该地址处设置结束模块。
+      
+      Font file contents invalid (字形文件内容无效)
+      原因：在prepare过程中，传送了指定了字形文件到设备驱动程序之后，DOS回答一个错误信号，表明这个字体文本格式不对，指定的文件可能不是字体文件或者字体文件已被破坏、更改或截断。
+      
+      FOR cannot be nested (FOR语句不能嵌套)
+      原因：在批处理文件的某命令行上发现FOR子命令不匹配。
+      
+      FORMAT another(Y/N)? (格式化另一个盘吗？是/否)
+      原因：在进行格式化磁盘操作时，每格式化完毕一个盘，命令都将显示一次这个信息供用户决择。
+      
+      FORMAT complete (格式化完成)
+      原因：提示性信息，告诉用户当前进行的格式化操作已顺利完成。
+      
+      FORMAT not supportedon drive D: (FORMAT命令不支持D盘)
+      原因：用户指定了计算机不支持的设备参数，或试图格式化不能格式化的盘(如虚拟盘)等，因而FORMAT不支持这张盘，即不能对这张盘进行格式化。
+      
+      FORMAT failure (格式化失败)
+      原因：建立目标盘时盘出错。重新操作或检查磁盘放置的位置是否正确。
+      
+      FORMATING while copying (拷贝的同时进行格式化)
+      原因：这是DISKCOPY的提示性信息。发现目标盘含有未格式化的磁道，DISKCOPY在复制数据时，使目标软盘的剩余部分格式化。
+      
+      Function not supported on this computer (计算机不支持此功能)
+      原因：在用户的这台计算机中对于要求的功能没有适宜的适配卡或设备。可以检查一下，EGA是否被设备在增强型彩色模式。 MS-DOS命令中提示信息大全 - DOS学习入门 & 精彩文章 （教学室） - 中国DOS联盟论坛 - 中国DOS联盟之联合DOS论坛_2
+　　General failure reading (or writing) drive X: (读/写驱动器X失败)
+      原因：发生了一个磁盘错误，通常的原因有：磁盘类型与驱动器类型不匹配，例如把1.2MB的高容量磁盘放在320KB/360KB的驱动器中进行读/写；磁盘未放好，或驱动器门未关上；磁盘未经正确格式化。
+      
+      Graphics characters already loaded (图形字符已装入)
+      原因：如果在运行GRAFTABL命令之前，图形字符表已装入内存，则显示此信息。
+      
+      Graphics characters loaded (图形字符装毕)
+      原因：当图形字符装入内存后，GRAFTABL命令就显示出这条信息。
+      
+      Hardware code pages: (硬件码页为：)
+      原因：这是一条提示性信息。为了响应MODE状态请求，该设备被认为带有一套硬件和准备好了的码页。这些硬件和码页在本条信息中列出。
+      
+      Has invalid cluster,file truncated (有无效的簇号，文件被截短)
+      原因：该信息前文件名指定的文件含有一个错误指针。若使用CHKDSK/F，则截去该文件最后无效的数据。如果执行CHKDSK命令时不带/F参数，则无校正动作。
+      
+      ID code specified is inconsistent with the selected keyboard code. (指定ID代码和选定的键盘代码不一致)
+      原因：用户输入了一个有次的键盘ID代码，但是与选定的国家代码不相兼容。
+      
+      Illegal device name (非法设备名)
+      原因：MODE指定的打印机名和串行口名有错。必须纠正所用的设备名。
+      
+      Incompatible system size (系统空间不相容)
+      原因：系统文件在源盘上占据的空间比目标盘可用的空间大，因而不能用SYS命令传送系统文件到这个盘上。
+      
+      Incorrect APPEND version (APPEND的版本不正确)
+      原因：用户不能使用当前的APPEND命令，因为用户使用了与当前DOS系统不兼容的版本。
+      
+      Incorrect DOS version (DOS版本不正确)
+      原因：用户试图使用的命令与系统中正在使用的DOS版本不相符。应该改变版本，使其一致。
+      
+      Incorrect number of parameters (参数项数目不正确)
+      原因：在命令行中指定的参数项目太多或太少。
+      
+      Incorrect parameter (参数不正确)
+      原因：(SHARE)指定的参数不正确。
+      
+      Infinite retry on parallel printer time-out
+      (并行打印机超时间连续重试)
+      原因：打印机可能是处于脱机(off line)或未准备好的状态。
+      
+      Infinite retry not supported on network printer
+      (不支持网络打印机重试)
+      原因：系统在经过网络接口时不能检出打印机的错误。应以直接连接的方式使用打印机，或者不指定重试。
+      
+      Insert backup diskette n into drive X: strike
+      any key when ready (在驱动器X中插入转储盘片n准备好后按任一键)
+      原因：这是RESTORE的提示信息。按提示进行操作。
+      
+      Insert backup source diskette in drive X,strike
+      any key when ready (在驱动器X中插入转储源盘片，准备好后按任一键)
+      原因：这是BACKUP的提示信息。按提示进行操作。
+      
+      Insert disk with command in drive X,strike
+      any key when ready (驱动器X中插入command盘，准备好后按任一键)
+      原因：DOS试图装入COMMAND程序，但命令处理程序不在A驱动器上。
+      
+      Insert diskette for drive X and press any
+      key when ready (在驱动器A中插好后按任一键)
+      原因：DOS在单软盘系统中按双软盘用。
+      
+      Insert disk with batch file and strick any
+      key when ready (插入批文件盘，准备好后按任一键)
+      原因：DOS运行时发现含有运行批处理文件的盘不在当前驱动器中。
+      
+      Insert DOS disk in X and srtike any key when
+      ready (在X中插入DOS盘，准备好后按任一键)
+      原因：进行盘格式化时发现DOS盘不在驱动器X中。
+      
+      Insert system disk in X and strike any key
+      when ready (在X驱动器中插入系统盘，准备好后按任一键)
+      原因：试图剪短SYS装入DOS文件，但在指定驱动器中没有DOS盘。
+      
+      Insert target disk in drive A press any key
+      when ready (把目标盘插在驱动器A，准备好后按下任一键)
+      原因：这是执行DISKCOPY的提示性信息，按提示操作。
+      
+      Insufficient disk space (磁盘空间不够)
+      原因：磁盘已没有足够空间再容纳被写入的文件。在进行拷贝，用EDLIN编辑文件时往往显示这类信息。
+      
+      Insufficient memory (内存不够)
+      原因：内存可利用空间太小，不足以运行程序、接受文件拷贝等操作。
+      
+      Insufficient memory for system transfer (无足够存储空间供系统传送)
+      原因：在执行FORMAT和SYS命令时，由于硬盘上没有足够空间，无法传送系统文件而出现此提示性信息。
+      
+      Insufficient memory for Country.sys file (没有足够的内存存放country.sys文件)
+      原因：在磁盘上，对country.sys没有足够的存贮空间。
+      
+      Insufficient room in root directory,erase
+      files from root and repeat CHKDSK (根目录无足够空间，删去其中一些文件后再试CHKDSK)
+      原因：用户已指令CHKDSK从找到的原“丢失”的数据块中建立文件，但是根目录是满的，并非所有丢失的链都能恢复成文件。
+      
+      Insufficient stack space (磁盘空间不够)
+      原因：DEBUG因磁盘空间不够无法执行写命令。
+      
+      Insufficient stack space (无足够的栈空间)
+      原因：(LINK)因无栈空间无法运行连接程序。应重新启动系统，释放某些驻留空间。
+      
+      Intermediate file error during pepe (在管道传送时中间文件出错)
+      原因：因为默认的驱动器根目录是满的，或磁盘空间不够，DOS不能建立中间文件，因而出现错误信息。
+      
+      Internal stack overflow system halted (内部堆栈溢出，系统中断)
+      原因：系统试图使用多于可用堆栈的堆栈数，于是产生溢出中断，并使系统停止。应重新启动DOS，然后编辑CONFIG.SYS系统文件，分配更多的堆栈。
+      
+      Invalid baud rate specified (指定无效的波特率)
+      原因：用户指定了错误的波特速率。正确的选择应是110,150,300,600,1200,2400,4800,9600,用户指定波特速率时，至少要指定前两位数字。
+      
+      Invalid characters in volume label (卷标含有无效字符)
+      原因：卷标只允许有1至11个字母数字的字符，用户可能指定了非法的卷标。
+      
+      Invalid COMMAND.COM in drive n (在n驱动器中COMMAND.COM无效)
+      原因：DOS待装入的COMMAND版本号泽。
+      
+      Invalid date (无效的日期)
+      原因：输入的日期不符合要求。
+      
+      Invalid device (无效的设备)
+      原因：为DOS指定的设备名无效。
+      
+      Invalid directory (无效的目录)
+      原因：DOS和COMMAND指定的路径中某项目录不存在。
+      
+      Invalid disk change (无效的盘片更换)
+      原因：当文件在软盘上仍处于打开状态时，更换了磁盘。
+      
+      Invalid device parameters form device driver
+      (来自设备驱动程序的设备参数无效)
+      原因：进行FORMAT操作时出现的错误提示。可能的原因是：隐含扇区(相对扇区)的数目并不正好是每磁道扇区的准确倍数，DOS分区不能在磁道的边界处开始。最好是装入FDISK命令，在硬盘上重新建立新的DOS分区，重试FORMAT命令。
+      
+      Invalid drive in search path (路径搜索中有一个无效的驱动器)
+      原因：DOS PATH中指定一个不存在的驱动器。
+      
+      Invalid filename or file not found (无效的文件名或文件未找到)
+      原因：在RENAME和TYPE操作过程中发现文件名错或文件不存在。
+      
+      Invalid drive specification (指定的驱动器无效)
+      原因：驱动器名有错或者驱动器不存在。
+      
+      Invalid entry,please press enter (输入无效，请按回车键)
+      原因：用户键入的字符有错：可能最后一个是输入了百分比符号，在百分比符后是不能再增加字符的。
+      
+      Invalid environment size specified (指定的环境参数无效)
+      原因：指定的环境长度包含一个非数值字符。指定的环境长度超出了范围。
+      
+      Invalid extent entry (无效的范围输入)
+      原因：用户指定的范围条目不在适当的范围内，最小值是1，最大值是999，应该重新输入一个合适的值。
+      
+      Invalid drive specification
+      Specified drive does not exist,or in nonremovable (指定的驱动器无效。指定的驱动器不存在或者不是固定的驱动器)
+      原因：用户将是一个无效的驱动器说明输入到一个命令或命令中的一个参量中，或者没有键入驱动器说明符。
+      
+      Invalid file/directory entry (输入的文件/目录无效)
+      原因：在FASTOPEN命令操作中，用户为目录或文件条目指定了一个无效的值。最小值应为10，最大值是999，默认值是34。
+      
+      Invalid format (无效的格式)
+      原因：用户装入的程序格式无效。请检查一下程序，校正一下命令，参照命令格式，修正命令。
+      
+      Invalid function (无效的功能)
+      原因：错误来源于应用错误。信息表示DOS功能没有得到支持。
+      
+      Invalid function parameter (无效的函数参数)
+      原因：用户建立的函数，其模式访问是不正确的，应该退出这个应用程序。
+      
+      Invalid handle (无效的句柄)
+      原因：用户试图用一个无效的内部文件标识符(句柄)访问一个文件。
+      
+      Invalid keyboard code specified (指定的键盘代码无效)
+      原因：用户在KEYB命令中选择了无效的键盘代码。
+      
+      Invalid keyboard ID specified (指定的键盘ID无效)
+      原因：命令行中指定的键盘ID是无效的。
+      
+      Invalid keyword (无效的关键字)
+      原因：用户输入一个无效的关键字，例如在MODE命令中打入了DELA=，而不是DELAY=。
+      
+      Invalid media or track 0 bak-disk unusable (无效的介质或0磁道损坏-磁盘不能用)
+      原因：FORMAT不能在指定的介质上对磁道0做格式化。存在下列情况之一时，将出现此提示；磁道0不能用。磁道0是引导区，文件分配表和目录驻留之处。如果0道不合格，则磁盘不能用。磁盘类型与驱动器类型不匹配。
+      
+      Invalid media type(介质类型无效)
+      原因：用户使用的磁盘上的介质与DOS不兼容。
+      
+      Invalid menmory block address (无效的内存地址)
+      原因：一个应用程序产生一个错误的存储地址。
+      
+      Invalid number of parameters (无效的参数个数)
+      原因：用户在命令行中，要么没有指定选择项或是字符串，要么是指定了错误的选择项个数。
+      
+      Invalid parameter combination (无效的参数组合)
+      原因：用户指定的开关参数中有一个是错误的或者是不存在的。
+      
+      Invalid partion table (无效的分区表)
+      原因：DOS在硬盘的分区信息中发现了无效的信息。
+      
+      Invalid password (无效的口令)
+      原因：用户输入的口令不正确。
+      
+      Invalid path (无效和路径)
+      原因：路径中包含一个无效的字符或者是一个无效的路径名。或者路径太长，多于63个字符。
+      
+      Invalid path on directory or directory not empty (目录上的路径是无效的，或者目录不空)
+      原因：这个信息往往在使用DEL或RD删除目录时出现，其原因有二：一是用户在路径中指定的一个名字不是有效的目录名，其二是目录中仍然存在文件或其它子目录。
+      
+      Invalid path or filename (无效的路径或文件名)
+      原因：在进行COPY或RENAME操作中，用户指定了一个不存在的目录或文件名。必须检查一个名字的拼写是否正确，文件目录存在否。
+      
+      Invalid path or file not found (无效的路径或文件未发现)
+      原因：在ATTRIB操作中用户指定了一个不存在的目录或文件名。
+      
+      Invalid profile statement on line X (在X行上的PRO文件语句是无效的)
+      原因：在GRAPHICS操作中，用户在给定行X中往PROFILE语句中键入了一个无效的语句。
+      
+      Invalid STACK parameter (无效的堆栈参数)
+      原因：在config.sys系统文件中，堆栈命令的格式中有一个无效的参数。
+      
+      Invalid sub-directory entry (无效的子目录输入)
+      原因：用户指定的子目录要么不存在，要么是无效的。
+      
+      Invalid swith type (无效的开关参数)
+      原因：为命令而输入的一个或多个转换(SWITCH)是无效的、顺序错误或有重复。
+      
+      Invalid syntax (无效的语法)
+      原因：用户在键入命令时，使用了错误的语法。
+      
+      Invalid syntax on display.sys code page driver (在DISPLAY.SYS码页上出现无效的语法)
+      原因：为了装入display.sys系统文件，用户在config.sys系统中键入DEVICE命令时，使用了错误的语法。
+      
+      Invalid Time (无效的时间)
+      原因：用户输入的时间格式有错或者字符不正确。
+      
+      Invalid unit (无效的装配)
+      原因：用户使用的设备驱动程序是无效的。如果程序是自己开发的，则应检查一下程序；如果程序是买来的，则应与厂商联系。
+      
+      Invalid volume ID (无效的卷标)
+      原因：在执行FORMAT过程中，如果用户输入的卷标与被格式化的磁盘上的卷标不匹配，则显示出这条信息。可以用VOL命令测试一下正确的卷标，然后再试。
+      
+      Is cross linked on allocation unit? (在分配单元上交叉连接？)
+      原因：CHKDSK发现两个文件使用了相同的分配单元。用/F参数删掉后一个文件。
+      
+      X is not a choice,please enter Y-Z (X不是该选择的，请键入Y或Z)
+      原因：在FDISK操作中，用户输入了一个无效的选择项X，例如正确的选择范围应该是(Y-Z)。
+      
+      
+      KEYB has not been Installed (KEYB没有被安装)
+      原因：用户系统中已安装的键盘代码未更改。如果想使用一个非缺省键盘的键盘代码，就应用KEYB命令安装所要用的键盘代码。
+      
+      
+      Lable not foune (标号没找到)
+      原因：在批处理文件中，GOTO命令转向的标号不存在。
+      
+      Last backup diskette not inserted (最后一张备份盘未插入)
+      原因：在BACKUP中指定了/A参量，但可移动的目标盘不是备份顺序中的最后一个。
+      
+      Last file not backup (最后一个文件未转储)
+      原因：BACKUP不能把最后一个文件转存到目标盘上，可能是因为目标盘已没有足够的空间，也可能是源文件或目录有错。
+      
+      Line too long (行太长)
+      原因：在执行EDLIN时，执行R(Replace)命令期间，用来作为替换的字符串行超过253个字符的限制。
+      
+      List output is not assigned to a device (列表输出没有赋给设备)
+      原因：当用户第一次键入PRINT命令时，DOS询问用户所指定的设备是否打印机。如果指定的打印设备名不对，则出现如上的提示信息。
+      
+      LPT#:not rerouted(LPT#:不能重定向)
+      原因：MODE不能改变并行打印机接口的方向。检查一下所指定的参数是否正确。
+      
+      LPT#:rerouted to COMn:(LPT#:重定向到串行口COMn:)
+      原因：MODE指出打印机重定向。
+      
+      LPT#:set for 80(LPT#:设备行宽80)
+      原因：MODE指出打印机每行打印80个字节。
+      
+      XXX Lost cluster found in yyy chain?
+      convert lost chain to files(Y/N)? (在yyy链里有XXX丢失的簇，是否把丢失的键恢复成文件是/否？)
+      原因：磁盘盘已出现碎裂。如果想把丢失的链恢复成文件则键入Y，否则键入N。
+      
+      
+      Make sure that a diskette is inserted into drive and the door is closed
+      (仔细把一个磁盘插入驱动器并把驱动器门关上)
+      原因：这是执行DISKCOMP或DISKCOPY过程中出现的提示性信息，因为这时驱动器里可能是空的，或者门是开的。
+      
+      Maximum space available for partition is XXX Mbyte (分区的最大可用空间是XXX兆字节)
+      原因：这是提示性的信息。在FDISK建立DOS分区时，将显示这种信息。
+      
+      Maximum number of logical DOS drives installed (最大的逻辑DOS驱动器号已安装)
+      原因：DOS仅支持驱动器字母A-E，其余可分配给逻辑驱动器(A-Z)。在最大的驱动器号已指定后(即Z驱动器已指定)就不能再生成逻辑DOS驱动器。如果用户还想定义另一个逻辑驱动器，必须先删除一个已存在的逻辑驱动器。
+      
+      Memory allocation error,cannot load MS-DOS system halted (存储器分配错，MS-DOS不能装入，系统停止)
+      原因：程序破坏了DOS系统，或者没有足够的内存用来装命令处理程序。应该重新启动DOS，减少缓冲区和设备驱动程序以及当前程序的数目。
+      
+      Memory control blocks destoryed (内存控制块被破坏)
+      原因：一个应用程序破坏了内存，损坏了系统的结构。
+      
+      Menu file missing or unreadable (菜单文件丢失或不能读出)
+      原因：DOSSHELL启动时发现DOSSHELL.MEU文件丢失或已损坏，因而不能读出。应该重新复制DOSSHELL.MEU文件到DOS SHELL的目录中并重新启动DOSSHELL。
+      
+      Missing operation system (操作系统丢失)
+      原因：操作系统被破坏，必须用带/S参数的FORMAT命令格式化磁盘。
+      
+      Must enter both /T and /N parameters (必须同时输入/T和/N二个参数)
+      原因：FORMAT操作时只输入/T或者/N一个参数，而这二个参数是必须一同输入的。
+      
+      Must specify ON or OFF (必须指定ON或OFF)
+      原因：在BREAK，VERIFY和ECHO操作中必须输入ON或者OFF，而用户输入的不是这二个字之一，必须重新输入。
+      
+      Must specifydestination line number (必须指定目录行号)
+      原因：用EDLIN命令时输入了移动(M)或复制(C)命令，但没有目的行号。应重新输入带行号的命令。
+      
+      
+      Name of list device[PRN]: (列表设备名字[PRN]:)
+      原因：在DOS被重新启动之后，第一次启动打印机时，出现此信息。它等待用户响应。输入打印机设备名或直接按回车选择PRN。
+      
+      New file (新文件)
+      原因：在执行EDLIN命令时，如果EDLIN找不到用户指定的文件名时，就显示这个信息。
+      
+      Network data fault (网络数据缺失)
+      原因：读取网络数据失败。
+      
+      NLSFUNC already installed (NLSFUNC已经安装过)
+      原因：NLSFUNC的常驻内存部分已装入，而且只能装一次。
+      
+      No APPEND (没有APPEND)
+      原因：没有目录正在被APPEND命令查寻。如果用户想为数据文件追加一个路径，就应该使用APPEND命令。
+      
+      No code page has been selected (选择的码页已经没有了)
+      原因：在MODE STATUS码页操作中，设备报告说并未为设备选择码页。
+      
+      No drive specified (没有指定设备)
+      原因：在config.sys文件的DEVICE语句中，用户没有指定物理驱动器号。
+      
+      No extended DOS partition to delete (没有扩展的DOS分区删除)
+      原因：用户选择了“删除扩展DOS分区”选项，但是在硬盘上没有DOS分区。
+      
+      No files found (没有查到文件)
+      原因：通过源盘路径指出的文件和文件名在源盘上未找到。
+      
+      No fixed disks present (硬盘不存在)
+      原因：在计算机上运行FDISK时发现：没有硬盘或有硬盘但未能正确安装。
+      
+      Nofree file handles (没有空余的文件管理字)
+      原因：试图装入命令处理程序时失败，因为打开的文件太多。
+      
+      No logical DOS drive(s) to delete (没有逻辑驱动器可删除)
+      原因：FDISK发出的信息，表明在这个分区中没有逻辑驱动器存在。
+      
+      No logical drives defined (没有定义逻辑驱动器)
+      原因：在扩展DOS分区中尚未定义逻辑DOS驱动器。
+      
+      No paper (没有纸)
+      原因：指定的打印机中没有打印纸或打印机电源未接通。
+      
+      No partition to make active (无分区可设置活动分区)
+      原因：在FDISK操作中，用户选择了“置活动分区”选择项，但是当前硬盘上没有分区可被激活。
+      
+      No path (无路径)
+      原因：为DOS查寻命令和批处理文件用的预定路径并没有指定。
+      
+      No prmary DOS partition to delete (没有初始DOS分区可删除)
+      原因：用户在FDISK操作中选择了“删除初始DOS分区”但是当前的硬盘上并没有DOS分区。
+      
+      No retry no paralle printer time-out (在并行打印机超时下不能再试)
+      原因：MODE未指定P参数，超时不再试。
+      
+      No room for system on destination disk (目标盘上无空间存放系统)
+      原因：目标软盘上已经没有为DOS所需要的预定空间，所以系统不能传送。
+      
+      No room in root directory (根目录已满)
+      原因：根目录已满，无法建立卷标。
+      
+      No room in directory for file (文件目录已满)
+      原因：在EDLIN操作时，因在指定的磁盘上目录已满，编辑文件丢失。
+      
+      No space to create a DOS partition (无空间可建立DOS分区)
+      原因：用户在当前硬盘上选择了“生成DOS分区”选择项，但当前硬盘已没有空间严重成形个DOS分区。
+      
+      No subdirectories exist (无子目录存在)
+      原因：在指定的驱动器中只有根目录，所以无目录路径可显示。这是执行TREE命令时发出的信息。
+      
+      No system on default drive (在默认的驱动器上没有系统文件)
+      原因：运行SYS命令时，在默认的软盘或硬盘上，没有找到要传送的系统文件。
+      
+      Non-DOS diskette (非DOS盘)
+      原因：用户使用的是一张无法识别的盘格式。
+      
+      Non-System disk or disk error,replace and strike any key when ready (非系统盘或盘出错，替换后按任一键)
+      原因：在盘中没有系统文件或在启动系统时出现读盘错误。
+      
+      * * * not able to backup file (不能转储文件)
+      原因：由于文件共享冲突，所以不能备份。
+      
+      * * * not able to restore file (不能复原文件)
+      原因：由于文件共享冲突，用户想重存的文件不能打开。
+      
+      No enough memory to continue (内存不够继续装入)
+      原因：在调用DOS外层时，因为内存不够(外层软件要求内存不少于256KB)而不能继续装入。
+      
+      No enough room to merge the entire file (无足够内存合并整个文件)
+      原因：EDLIN操作时，因内存不够无法合并文件。
+      
+      No found specified character (找不到指定的字符串)
+      原因：这是EDLIN操作时，因内存不够无法合并文件。
+      
+      No found specified character (找不到指定的字符串)
+      原因：这是EDLIN命令信息。在规定的行范围内，EDLIN用REPLAE文本或SEARCH文件命令没有找到指定的字符串。
+      
+      
+      One or more CON code pages invalid for given Keyboard (对于给定的键盘，出现一个或多个无效的CON码页)
+      原因：用户试图改变键盘，而它所带的码页组合与CON设备码页(由MODE命令准备好的码页和直接由硬件支持的码页)有矛盾，当前CON设备码页组合对给定的键盘代码是无效的。
+      
+      Only non-bootable partitions exist (仅有非自举的分区存在)
+      原因：用户试图用FDISK改变活动分区，但是没有一个定义好的分区能成功地从硬盘上启动。
+      
+      Only partition drive 1 can be made active (仅在驱动器1上可以建立活动分区)
+      原因：用户试图在硬盘上生成一个活动(active)的分区，但这个分区不在第一个硬盘驱动器上，这是不允许的。
+      
+      Out of environment space (环境块空间超界)
+      原因：没有足够的空间接收更多的程序环境数据。
+      
+      Out of space on list file (列表文件空间超界)
+      原因：无足够空间存放表文件。
+      
+      Out of space on run file (运行文件空间超界)
+      原因：无足够的空间存放运行文件。
+      
+      Parameters not compatible (参数不兼容)
+      原因：使用了二个互不兼容的参数(例如：FORMAT/B和/Y)，这样指定的参数不适用于驱动器或介质。
+      
+      Parameter format not correct (参数格式不正确)
+      原因：输入的一个或多个参数是无效的，或顺序有错，或有重复。
+      
+      Parameter not compatible with fixed disk (参数与硬盘不兼容)
+      原因：FORMAT指定的参数(/1或/8)对硬盘无效。
+      
+      Parameters not supported (参数不被支持)
+      原因：用户指定了DOS不支持的参数。
+      
+      Parameters not supported by drive (驱动器不支持该参数)
+      原因：当设备驱动程序对于这个驱动器不支持一般的I/O控制功能请求时，FORMAT将显示此信息。
+      
+      Path(name)too long (路径名太长)
+      原因：用户指定的路径名太长。
+      
+      Path not found (路径名未找到)
+      原因：用户指定了一个无效的路径名。
+      
+      X percent of disk formatted (磁盘已格式化百分的X)
+      原因：这是FORMAT的提示性信息，告诉用户磁盘格式化已经进行了百分之几。
+      
+      Press any key to be formatting X: (按任一键后开始格式化驱动器X：)
+      原因：格式化时的提示性信息。
+      
+      Press any key to be recovering of the file(s) on drive X (按任一键，开始恢复驱动器X的文件)
+      原因：RECOVER的提示性信息。
+      
+      Print Queue is empty (打印队列已空)
+      原因：当前PRINT命令未处理文件。
+      
+      Print Queue is full (打印队列已满)
+      原因：送入打印队列的文件太多。
+      
+      Printer error (打印机出错)
+      原因：因打印机故障不能设备打印模式。
+      
+      Print lines per inch set (设置每英寸打印行数)
+      原因：设定打印机打印行间距离。
+      
+      Probable non-DOS disk continue(Y/N)? (可能不是DOS盘，继续吗？)
+      原因：(CHKDSK)分配表的介质标志有错，或未经格式化或盘已损坏。
+      
+      Proessing cannot continue (处理不能继续)
+      原因：(CHKDSK)因内存不够不能继续处理。
+      
+      Program size exceedes capacity of LINK,limit 740K (程序大小超出LINK的限定容量740K)
+      原因：所连接的程序过大。
+      
+      Program terminated normally (程序正常结束)
+      原因：(DEBUG)被调试的程序执行完毕。
+      
+      Program too big to fit in memory (程序太大，无法装入内存)
+      原因：因内存空间不够，无法装入命令，程序无法执行。
+         Rate and Delay must be specified
+      together (Rate和Delay必须同时指定)
+      原因：Typematic比率和延时必须同时设置好。如果只改变其中一个，则将出现错误。
+      
+      Read error in:X:\Level1\Level2 (在X:\Level1\Leve2目录中读信息出错)
+      原因：DELIN操作时，读指定目录下文件时出错。可以把文件复制到另一第盘上，然后再试。
+      
+      Read fault error (读错误)
+      原因：DOS不能从设备上读取数据，可能磁盘未放好。
+      
+      Read error in country.sys (读COUNTRY.SYS出错)
+      原因：DOS不能读取COUNTRY.SYS系统文件。重试一次。如果仍出现这个信息，则多半是因为COUNTRY.SYS系统本身有毛病，可重新拷贝，重新设置。
+      
+      Read error in filename (读文件出错)
+      原因：DOS不能读取输入的文件。
+      
+      Read error,KEYBOARD.SYS (读KEYBOARD.SYS时出错)
+      原因：DOS不能读取KEYBOARD.SYS文件。一般说，出现这个信息多半是由KEYBOARD.SYS本身引起的，所以应该检查这个文件，或重新恢复原始的KEYBOARD.SYS。
+      
+      Read fault error reading drive X: (读驱动X时出现读错误)
+      原因：多半是因为磁盘没有放置正确。
+      
+      Reading soure file(s)... (正在读取源文件...)
+      原因：这是操作XCOPY命令时出现的提示性信息，表示XCOPY正在读取用户所指定的源文件。
+      
+      Reinsert diskette for drive D: and press ENTER when ready (重新把软盘插在D：准备好后请按下ENTER)
+      原因：这个信息通常是用FORMAT/S后出现，它意味着：DOS系统文件装满了内存，但是未把全部文件读入内存，因为内存已满，请求新的软盘后，FORMAT开始做格式化工作，并把内存中的全部文件放到新的软盘上。然后FORMAT要求插入DOS软盘，以便继续将DOS文件的剩余部分装内存。
+      
+      Replace filename(Y/N) (更换文件名吗 是/否)
+      原因：当在RELPACE命令中指定/W开关参数时，REPLACE显示这个信息。
+      
+      Requested partition size exceeds the maximum available space (要求的逻辑驱动器大小超出最大的可用空间)
+      原因：用户试图生成一个比可用空间大的逻辑驱动器时出现这一信息。
+      
+      Requested partition size exceeds the maximum available space (要求的分区大小超出最大的可用空间)
+      原因：用户试图在硬盘上生成一个比最大可用空间还大的分区。
+      
+      Requested screen shift out of range (要求的屏幕超过范围)
+      原因：提示用户不要过分远地移动屏幕或设置的范围过大(用MODE时)，以致超出屏幕显示的范围。
+      
+      Required font not loaded (需求的字体未装入)
+      原因：提示用户在DISPLAY.SYS中没有用户所需求的字体。用户可改变CONFIG.SYS系统文件中device=display.sys命令中的字体(m)到最大值，然后重新启动DOS。
+      
+      Required parameter missing (需求的参数丢失)
+      原因：用户试图输入一条命令，但是没有用户所需求的命令。可以检查一个是否拼错了一个参数，或丢掉一个字符。
+      
+      Required profile statment missing before line X (在X行之前缺少一个说明语句)
+      原因：检查一下，是否在X行之前PROFILE语句脱离了语句顺序。
+      
+      Relocation table overflow (重定位表溢出)
+      原因：(LINK)程序中使用的长调用、长转移或其它长指针超13000个。应修改程序，尽可能用短引用替代长引用。
+      
+      Resident protion of MODE loaded (MODE的常驻部分已装入)
+      原因：表示MODE程序部分已调入内存，即常驻部分已装入。MODE执行屏幕设定功能时需常驻。
+      
+      Resident part of PRINT installed (PRINT的常驻部分已安装)
+      原因：当用户发出PRINT命令时，DOS首先显示这个信息，它意味着在处理打印命令以及其它处理过程中，PRINT的常驻部分已调入内存，内存容量大约减少3200字节。
+      
+      Resident protion of NLSFUNC loaded (NLSFUNC常驻部分已装入)
+      原因：NLSFUNC驻留内存，仅需安装一次。这是提示性信息，告诉用户NLSFUNC已驻留内存。
+      
+      Restore file sequence error (文件复原的次序出错)
+      原因：RESTORE文件未能恢复，因为磁盘没有按顺序插入。
+      
+      * * * Restoring files from drive Y * * *
+      Source:X (* * *从驱动器Y复原文件* * *源盘：X)
+      原因：这是一条提示性信息。在执行RESTORE命令时出现，它告诉用户，源盘上的文件正在转储(RESTORE）。
+      
+      Resynch failed,files are too different (再同步失败，文件差别太大)
+      原因：FC命令比较装入内存文件。如果没有与行缓冲区部分文件匹配，FC就显示这个信息。
+      
+      Run-time error * * * (运行-时间错* * *)
+      原因：当运行命令时，因内存不够，COMMAND发出这个信息。在这种情况下南明要增加系统可用内存的内存量，例如把CONFIG.SYS文件中的BUFFERS参数更换成较小值，取消一些内存常驻程序等。
+      
+      
+      Same drive specified more than once (多次指定同一驱动器)
+      原因：FASTOPEN指定驱动器字母只能一次，而用户却试图对同一驱动器再一次启动快速打印(FASTOPEN)功能。
+      
+      Same parameter entried twice (同一个参数输入了二次)
+      原因：FORMAT的提示信息。表明用户已两次输入/t,/n,/f,或者/n开关参数中的一种，因此需要重新输入正确的参数。
+      
+      Second diskette bad or incompatible (第二张盘是坏的或者不兼容的)
+      原因：第二张盘格式与第一张盘不一样。一般进行DISKCOMP时出现此信息。用户可运行CHKDSK以识别问题所在。
+      
+      Sector not found (扇区没找到)
+      原因：表示盘上有坏扇区，以致DOS在其上找不到。
+      
+      Sector size adjusted (扇区大小已调整)
+      原因：VDISK发现有必要调节CONFIG.SYS命令里DEVICE=VDISK.SYS的扇区长度值。
+      
+      Sector size too large in file <filename> (文件<filename>中扇区长度太大)
+      原因：启动DOS时，<filename>命名的驱动器指定的扇区长度与DOS定义不符。应减少扇区长度以求其与DOS定义一致。
+      
+      Seek error reading (or writing) drive X: (读/写驱动X:时发生查找错误)
+      原因：DOS不能存取磁盘上的信息。应该检查一下软盘是否已插入驱动。
+      
+      SHARE already installed (SHARE已装好)
+      原因：SHARE只需安装一次。
+      
+      Sharing violation reading drive X: (读驱动器X时产生共享冲突)
+      原因：一个程序试图读取另一个程序正在使用的文件。
+      
+      Sharing buffer exceeded (共享缓冲区超界)
+      原因：文件共享和记录块锁定用的缓冲区超界。
+      
+      Segment limit set too high,exceeds 1024 (段限值设置太大，超出1024字节)
+      原因：(LINK)指定的参数/x中设置值太大。
+      
+      Source and target drives are the same (源驱动器和目标驱动器相同)
+      原因：使用BACKUP和RESTORE命令时，源驱动器和目标驱动器应不相同。
+      
+      Source does not contain backup files (源盘中未包含备份文件)
+      原因：执行RESTORE命令，RESTORE发现在源介质中并没有用Backup产生的文件。
+      
+      Source path required (需要源路径)
+      原因：在执行REPLACE命令时，用户没有为该命令指定源路径。
+      
+      Specified command search directory bad (指定的命令搜索目录是非法的)
+      原因：DOS指定了一个非法的路径名。
+      
+      Specified drive does not exist;or is non-removable (指定的驱动器不存在或者非移动的)
+      原因：在执行DISKCOPY或DISKCOMP命令时，用户指定的驱动器是硬盘驱动器或根本不存在的驱动器。
+      
+      Source diskette bad or unusable (源盘出错或不能用)
+      原因：在执行DISKCOPY命令时发现读源盘时出错，无法拷贝。估计盘上有坏扇区。
+      
+      Syntax error in GRAPHICS profie (GRAPHICS.PRO文件中有语法错误)
+      原因：GRAPHICS.PRO文件句中有语法错误，例如键入的词句顺序反了。
+      
+      Synatx error (语法错误)
+      原因：(DOS)输入的命令格式不对。
+      
+      System files restored.The target disk may not be bootable (系统文件已复原，目标盘可能不可引用)
+      原因：(RESTORE)复原的系统文件若是旧版本，则盘可能是不可引导的。
+      
+      System transferred (系统已传送到盘上)
+      原因：当用户指定了FORMAT/S时，将显示这个消息。告诉用户FORMAT已把系统文件装入被格式化的磁盘上。
+      
+      
+      Target cannot be used for backup (目标盘不能作备份用)
+      原因：目标盘是坏的，或者有不可识别的格式。
+      
+      Target diskette bad or unusable (目标软盘坏或不能用)
+      原因：在DISKCOPY操作时发现盘片是坏的，无法复制。
+      
+      Target diskette bad or incompatible (目标盘损坏，或者不兼容)
+      原因：在DISKCOPY操作时，用户试图在一个不兼容的驱动器中写盘。
+      
+      Target diskette may be unusable (目标软盘可能不可用)
+      原因：DISKCOPY出现不可恢复的读写错误，复制的副本可能不完整。
+      
+      Target diskette write protected,correct then strike any key (目标盘是写保护盘，取封后按任一键)
+      原因：DISKCOPY试图复制到一张写保护的盘上。
+      
+      Target does not contain backup files (目标盘里不包含备份文件)
+      原因：BACKUP指定参数/A，但未找到以前备份文件的目标盘。
+      
+      Target is full (目标盘已满)
+      原因：RESTORE作复原操作时发现硬盘空间已被占满，删去一些不必要的文件后再试。
+      
+      Terminate batch job(Y/N?) (是否终止批处理作业？是/否)
+      原因：(DOS)执行批处理文件时按Ctrl+Break键，则出现此提示。此外，在EDLIN或WORDSTARE操作中也同样出现此信息。
+      
+      The last file was not restored (最后一个文件未复原)
+      原因：在进行RESTORE操作时，因硬盘空间不够而停止时，或因键入Ctrl+Break而暂停时，均出现此提示信息。
+      
+      The current active partition is X (当前的活动分区是X)
+      原因：这是FDISK操作过程的提示性信息。
+      
+      The only bootable partition on drive 1 is already set active (第一个硬盘驱动器中，仅有的一个可自举的分区已设置为可活动的分区)
+      原因：用户试图改变活动分区。活动分区必须驻留在系统的中第一个硬盘驱动器中，并且必须是可自举的。
+      
+      Too many block devices (块设备太多)
+      原因：装入的块设备部件数超出26个。修改DEVICE=指定的设备驱动程序。
+      
+      Too many drive entries (指定驱动器数过多)
+      原因：用户试图指定第5个驱动器时将产生定信息，因为用FASTOPEN命令，最多只可以打开4个硬盘驱动器。
+      
+      Too many extent entries (指定范围项数过多)
+      原因：在使用FASTOPEN命令中，范围项的最大数是999。
+      
+      Too many file/directory entries (指定文件/目录项数过多)
+      原因：用户在FASTOPEN语句中指定了太多的文件或目录条目。n的总值必须在10—999之内。
+      
+      Too many files open （打开文件过多)
+      原因：在COMMAND命令行中输入太多的定位参数。
+      
+      Too many name entries (指定的文件名入口过多)
+      原因：在FASTOPEN中，为一个驱动器所指定的项目总数不能超过999。用户应检查一下所指定的数值是否正确。
+      
+      Too many group-,segment-,and class-name,limit 254 permodule (组、段和类名太多，每模限定254个)
+      原因：在(LINK)程序中含有过多的组、段和类名。
+      
+      Top level process aborted,cannot continue (顶层处理被中止，不能继续)
+      原因：DOS启动时，发现一个磁盘错误而用户选择A，系统暂停。建议用其它盘启动。
+      
+      Track 0 bad-disk unusable (磁盘0道故障，盘不能用)
+      原因：FORMAT命令能够调节磁盘上有毛病的扇区，但对靠近0道的扇区除外。一旦0道出故障，就会出现这个提示，表示此盘已不能使用。
+      
+      Tree past this point not processed (此目录树不能被处理)
+      原因：此信息表示CHKDSK不能继续处理已经处理过的这个目录路径，因为在上面已经有了错误的记载。
+      
+      
+      Unable to access drive d (不能存取驱动器d)
+      原因：FDISK不能访问用户指定的驱动器上的数据。
+      
+      Unable to create directory (不能建立目录)
+      原因：MKDIR要建立的子目录已存在，或根目录已满，或指定的路径不存在。
+      
+      Unable to create KEYB table in resident memory (不能在常驻内存建立KEYB表)
+      原因：KEYB命令先前已装入，且已尼为KEYB表分配专门数量的驻留内存。但请求的配置超过那些驻留内存，因而没有足够的内存空
+      间来生成这个表。
+      
+      Unable to perform refresh operation (不能实现刷新操作)
+      原因：PRINTER.SYS在其RAM区中没有一个备份的码页，打印机不能正常工作。
+      
+      Unable to reload with profile supplied (不能再把说明文件装入)
+      原因：用户已经装入一次GRAPHICS程序，试图再装入内存空间就不够了。必须重新启动系统。
+      
+      Unable to shift screen (不能移出屏幕)
+      原因：MODE不能用来移动屏幕上的测试图形，超出允许显示的范围。
+      
+      Unable to write BOOT (不能写入自举记录)
+      原因：磁盘的第一个磁道或DOS分区坏了。BOOT不能写在上面。磁道和DOS分区不能用。
+      
+      Unable to whift screen left (不能左移屏幕)
+      原因：(MODE)若再左移，则超出允许范围。
+      
+      Unable to shift screen right (不能右移屏幕)
+      原因：(MODE)若再右移，则超出允许范围。
+      
+      Unrecognized command in CONFIG.SYS (在CONFIG.SYS文件中有不能识别的命令)
+      原因：DOS启动时，发现配置文件中有无效的命令。
+      
+      Unrecognized switch error:XXXXXX (不能识别的开关错误：XXXXXX)
+      原因：在开关指示符之后，有无效的字符。
+      
+      Unrecoverable error in directory (目录中有不可恢复的错误)
+      原因：CHKDSK在检查目录时，遇到一个错误。
+      
+      Unrecoverable file sharing error (不可恢复的共享文件错误)
+      原因：SHARE产生一个文件共享冲突。
+      
+      unrecoverable read error on drive X track XX,sid X (驱动X的X面XX道出现了不可恢复的错误)
+      原因：DISKCOMP或DISKCOPY四次试图从规定的驱动内的软盘里读取数据，但从指定的磁道或盘面上未能读出数据。
+      
+      Unrecoverable write error on target track XX,side X (目标盘X面XX道出现不可恢复的写错误)
+      原因：DISKCOPY制作的目标盘有写错误，所复制的数据可能不完整。   Volume label (11 characters,ENTER
+      for noe) (卷标(11个字符，若不建立卷标则按ENTER键))
+      原因：FORMAT结束时，要求用户响应这个提问。
+      
+      Volume in drive X: has label (驱动器X：上无卷标)
+      原因：这是一个提示性信息。如键入DIR后，DOS总要告诉用刻字个盘的卷标是什么，以便用户辨认。
+      
+      Volume label does not match (卷标不匹配)
+      原因：用户输入的卷标和从前指定的卷标不同。
+      
+      Volume serial number is XXXX-XXXX(卷标编号是XXXX-XXXX)
+      原因：用户用DIR查看目录时，DOS总要提示用户，这引磁盘的编号是多少。   Warning! All data on non-removable
+      disk drive x will be lost proceed with FORMAT(Y/N)? (警告！若格式化硬盘，数据将全部丢失)
+      原因：在用FORMAT格式化硬盘时发出的信息，要求用户响应。若格式化则按下Y，否则按N。
+      
+      Warning! Data in DOS partition could be DESTROYED.Do you wish to continue?
+      (警告！DOS分区的数据将被删去，是否继续运行？)
+      原因：FDISK删除DOS分区前的提示。
+      
+      Warning! directory full XXX file(s) recovered (警告！目录已满，XXX文件已被恢复)
+      原因：用RECOVER命令恢复文件时，恢复XXX个文件后发现磁盘空间已满。
+      
+      Warning! Diskette is out of sequence (警告！磁盘顺序不对)
+      原因：用RESTORE命令转储备份文件时发现盘的顺序不是备份时的顺序。
+      
+      Warning! File X is read-only file (警告！文件X是一个只读文件)
+      原因：指定的文件是一个只读文件。如果想从备份盘上恢复这个文件则键入Y，否则键入N。
+      
+      Warning! File X was changed after it was backup.Replace the file(Y/N)? (警告！文件名在备份后修改过，要更换文件吗？)
+      原因：RESTORE提示用户是否要替换已修改过的BACKUP文件。如果想恢复则键入Y，否则键入N。
+      
+      Warning! Files in the target drive D:\root directory will be erased,Press
+      any key when ready.(警告！文件在目标驱动器D:\根目录将被删除，准备好后按任一键)
+      原因：在BACKUP操作中的提示性信息。
+      
+      Warning! No files were found to backup (警告！找不到要备份的文件)
+      原因：在BACKUP时未能找到指定的文件。
+      
+      Warning! No files were fouond to restore (警告！没有发现要转储的文件)
+      原因：RESTORE未能找到要转储的文件。
+      
+      Warning! No partition are set active-disk is not startable unless a partition
+      is set active.(警告！没有设置活动分区——除非设置一个活动，否则磁盘不能启动)
+      原因：在FDISK操作中，没有设置活动分区。应该回到FDISK选择项，重新设置活动分区。
+      
+      Warning! Read error in EXE file (警告！在EXE文件中读错)
+      原因：(EXE2BIN)读取的数量少于标题尺寸。
+      
+      Warning! The partition marked active is not bootable (警告！活动分区不能自举)
+      原因：用FDISK设置活动分区时，活动分区必须是能自举的分区。
+      
+      Write failure,diskette unusable(写失败，磁盘不能用)
+      原因：SYS正在往磁盘上写数据时，发生一个DOS致命的错误。必须用其它磁盘再运行SYS命令。
+      
+      Write fault error writing drive X: (写驱动器X失败)
+      原因：DOS不能对指定的设备写数据。检查一下，磁盘放置是否正确，磁盘所在的驱动器门关好否。
+      
+      Write protect error (写保护错)
+      原因：试图往一个有写保护的磁盘写数据。
+      
+      Writing XXX bytes (写入XXX个字节)
+      原因：DEBUG提示已写入的字节数。这是一个提示性信息。

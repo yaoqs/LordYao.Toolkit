@@ -1,0 +1,2 @@
+menushowdelay为菜单打开延时
+WaitToKillServiceTimeout为系统自动结束服务的等待时间

@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control]
+"WaitToKillServiceTimeout"="100"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Control]
+"WaitToKillServiceTimeout"="100"
+

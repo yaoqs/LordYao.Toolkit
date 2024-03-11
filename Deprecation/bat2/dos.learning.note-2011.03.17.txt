@@ -1,0 +1,41 @@
+制作启动U盘
+：usboot.exe
+按照提示制作引导性U盘
+
+award bios刷新实例1.
+：awdflash.exe程序dos下启动盘进入
+同时备份原bios文件
+
+award bios刷新实例 2
+：winflash.exe
+Windows界面下，保存备份文件后刷新
+
+ami bios刷新实例
+：amiflash.exe
+dos下，swich菜单，file文件名，备份，go ahead
+
+低级格式化修复硬盘坏道
+：low_format.exe
+low level current device
+
+ipconfig
+：ipconfig /all
+ ipcofig/release释放
+ipconfig/renew申请
+
+还原初始tcp/ip设置
+：netsh
+inter
+ip
+reset
+--
+netsh dump>setting.txt
+netsh exec setting.txt
+
+远程启动telnet服务
+：net use \\x.x.x.x
+run:mmc
+wenjian -添加删除管理单元-服务-管理另一台x.x.x.x-telnet服务启动
+
+远程添加一个用户
+：telnet状态下 net user

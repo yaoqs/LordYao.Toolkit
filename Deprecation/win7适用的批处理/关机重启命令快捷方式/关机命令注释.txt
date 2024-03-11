@@ -1,0 +1,5 @@
+shutdown.exe -s -t 10   10秒关机 -s是关机参数
+shutdown.exe -r -t 10	10秒重启 -r是重启参数
+shutdown.exe -a		放弃关机
+
+这几个快捷方式指向位置就是这三条命令。运行system32中的shutdown.exe

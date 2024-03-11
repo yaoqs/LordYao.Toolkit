@@ -1,0 +1,2 @@
+修改程序默认安装路径方法：HKEY_LOCAL_MACHINE/Software/Microsoft/Windows/CurrentVersion
+在界面右侧窗口里找到”ProgramFilesDir"项，双击修改默认路径“C:/Program Files”至指定的文件夹路径；
